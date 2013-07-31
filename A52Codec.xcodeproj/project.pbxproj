@@ -878,6 +878,7 @@
 					"-read_only_relocs",
 					suppress,
 				);
+				"OTHER_LDFLAGS[arch=x86_64]" = "";
 				PRESERVE_DEAD_CODE_INITS_AND_TERMS = YES;
 				SDKROOT = macosx;
 				STRIP_INSTALLED_PRODUCT = NO;
@@ -1044,6 +1045,7 @@
 					"-read_only_relocs",
 					suppress,
 				);
+				"OTHER_LDFLAGS[arch=x86_64]" = "";
 				PRESERVE_DEAD_CODE_INITS_AND_TERMS = YES;
 				SDKROOT = macosx;
 				STRIP_INSTALLED_PRODUCT = NO;
@@ -1074,6 +1076,7 @@
 					"-read_only_relocs",
 					suppress,
 				);
+				"OTHER_LDFLAGS[arch=x86_64]" = "";
 				PRESERVE_DEAD_CODE_INITS_AND_TERMS = YES;
 				SDKROOT = macosx;
 				STRIP_INSTALLED_PRODUCT = NO;
