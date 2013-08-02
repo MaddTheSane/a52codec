@@ -736,7 +736,6 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
 				INFOPLIST_FILE = "A52Preferences/Preferences-Info.plist";
@@ -753,7 +752,6 @@
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
@@ -771,8 +769,8 @@
 				COPY_PHASE_STRIP = YES;
 				EXPORTED_SYMBOLS_FILE = A52/ACShepA52Codec.exp;
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(SYSTEM_LIBRARY_DIR)/Frameworks/ApplicationServices.framework/Versions/A/Frameworks",
-					"$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Versions/A/Frameworks",
+					"${SDK_DIR}$(SYSTEM_LIBRARY_DIR)/Frameworks/ApplicationServices.framework/Versions/A/Frameworks",
+					"${SDK_DIR}$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Versions/A/Frameworks",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"TARGET_OS_MAC=1",
@@ -781,11 +779,10 @@
 				HEADER_SEARCH_PATHS = (
 					liba52/include,
 					.,
-					/System/Library/Frameworks/AudioUnit.framework/Versions/A/Headers,
+					"${SDK_DIR}/System/Library/Frameworks/AudioUnit.framework/Versions/A/Headers",
 				);
 				INFOPLIST_FILE = "Info-A52Codec__Upgraded_.plist";
 				OTHER_CFLAGS = "-DIS_COMPILER_WORKING=0";
-				OTHER_REZFLAGS = "-d ppc_$ppc -d i386_$i386 -d x86_64_$x86_64 -i / -i /System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/CarbonSound.framework/Versions/A/Headers -I /System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers";
 				PRODUCT_NAME = A52Codec;
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = "-Wall";
@@ -800,18 +797,17 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				EXPORTED_SYMBOLS_FILE = AC3MovieImport/AC3MovieImport.exp;
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(SYSTEM_LIBRARY_DIR)/Frameworks/ApplicationServices.framework/Versions/A/Frameworks",
-					"$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Versions/A/Frameworks",
+					"${SDK_DIR}$(SYSTEM_LIBRARY_DIR)/Frameworks/ApplicationServices.framework/Versions/A/Frameworks",
+					"${SDK_DIR}$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Versions/A/Frameworks",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = "TARGET_CARBON=1";
 				HEADER_SEARCH_PATHS = (
 					liba52/include,
 					.,
-					/System/Library/Frameworks/AudioUnit.framework/Versions/A/Headers,
+					"${SDK_DIR}/System/Library/Frameworks/AudioUnit.framework/Versions/A/Headers",
 				);
 				INFOPLIST_FILE = "Info-AC3MovieImport.plist";
 				OTHER_CFLAGS = "-DIS_COMPILER_WORKING=0";
-				OTHER_REZFLAGS = "-d ppc_$ppc -d i386_$i386 -d x86_64_$x86_64 -i / -i /System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/CarbonSound.framework/Versions/A/Headers -I /System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers";
 				PRODUCT_NAME = AC3MovieImport;
 				WRAPPER_EXTENSION = component;
 			};
@@ -823,7 +819,6 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
 				INFOPLIST_FILE = "A52Preferences/Preferences-Info.plist";
@@ -879,6 +874,7 @@
 					suppress,
 				);
 				"OTHER_LDFLAGS[arch=x86_64]" = "";
+				OTHER_REZFLAGS = "-d ppc_$ppc -d i386_$i386 -d x86_64_$x86_64 -i / -i ${SDK_DIR}/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/CarbonSound.framework/Versions/A/Headers -I ${SDK_DIR}/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers";
 				PRESERVE_DEAD_CODE_INITS_AND_TERMS = YES;
 				SDKROOT = macosx;
 				STRIP_INSTALLED_PRODUCT = NO;
@@ -894,18 +890,17 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				EXPORTED_SYMBOLS_FILE = AC3MovieImport/AC3MovieImport.exp;
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(SYSTEM_LIBRARY_DIR)/Frameworks/ApplicationServices.framework/Versions/A/Frameworks",
-					"$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Versions/A/Frameworks",
+					"${SDK_DIR}$(SYSTEM_LIBRARY_DIR)/Frameworks/ApplicationServices.framework/Versions/A/Frameworks",
+					"${SDK_DIR}$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Versions/A/Frameworks",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = "TARGET_CARBON=1";
 				HEADER_SEARCH_PATHS = (
 					liba52/include,
 					.,
-					/System/Library/Frameworks/AudioUnit.framework/Versions/A/Headers,
+					"${SDK_DIR}/System/Library/Frameworks/AudioUnit.framework/Versions/A/Headers",
 				);
 				INFOPLIST_FILE = "Info-AC3MovieImport.plist";
 				OTHER_CFLAGS = "-DIS_COMPILER_WORKING=0";
-				OTHER_REZFLAGS = "-d ppc_$ppc -d i386_$i386 -d x86_64_$x86_64 -i / -i /System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/CarbonSound.framework/Versions/A/Headers -I /System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers";
 				PRODUCT_NAME = AC3MovieImport;
 				WRAPPER_EXTENSION = component;
 			};
@@ -918,8 +913,8 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				EXPORTED_SYMBOLS_FILE = AC3MovieImport/AC3MovieImport.exp;
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(SYSTEM_LIBRARY_DIR)/Frameworks/ApplicationServices.framework/Versions/A/Frameworks",
-					"$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Versions/A/Frameworks",
+					"${SDK_DIR}$(SYSTEM_LIBRARY_DIR)/Frameworks/ApplicationServices.framework/Versions/A/Frameworks",
+					"${SDK_DIR}$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Versions/A/Frameworks",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"TARGET_CARBON=1",
@@ -928,11 +923,10 @@
 				HEADER_SEARCH_PATHS = (
 					liba52/include,
 					.,
-					/System/Library/Frameworks/AudioUnit.framework/Versions/A/Headers,
+					"${SDK_DIR}/System/Library/Frameworks/AudioUnit.framework/Versions/A/Headers",
 				);
 				INFOPLIST_FILE = "Info-AC3MovieImport.plist";
 				OTHER_CFLAGS = "-DIS_COMPILER_WORKING=0";
-				OTHER_REZFLAGS = "-d ppc_$ppc -d i386_$i386 -d x86_64_$x86_64 -i / -i /System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/CarbonSound.framework/Versions/A/Headers -I /System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers";
 				PRODUCT_NAME = AC3MovieImport;
 				WRAPPER_EXTENSION = component;
 			};
@@ -967,8 +961,8 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				EXPORTED_SYMBOLS_FILE = A52/ACShepA52Codec.exp;
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(SYSTEM_LIBRARY_DIR)/Frameworks/ApplicationServices.framework/Versions/A/Frameworks",
-					"$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Versions/A/Frameworks",
+					"${SDK_DIR}$(SYSTEM_LIBRARY_DIR)/Frameworks/ApplicationServices.framework/Versions/A/Frameworks",
+					"${SDK_DIR}$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Versions/A/Frameworks",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"TARGET_OS_MAC=1",
@@ -977,11 +971,10 @@
 				HEADER_SEARCH_PATHS = (
 					liba52/include,
 					.,
-					/System/Library/Frameworks/AudioUnit.framework/Versions/A/Headers,
+					"${SDK_DIR}/System/Library/Frameworks/AudioUnit.framework/Versions/A/Headers",
 				);
 				INFOPLIST_FILE = "Info-A52Codec__Upgraded_.plist";
 				OTHER_CFLAGS = "-DIS_COMPILER_WORKING=0";
-				OTHER_REZFLAGS = "-d ppc_$ppc -d i386_$i386 -d x86_64_$x86_64 -i / -i /System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/CarbonSound.framework/Versions/A/Headers -I /System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers";
 				PRODUCT_NAME = A52Codec;
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = "-Wall";
@@ -996,8 +989,8 @@
 				COPY_PHASE_STRIP = NO;
 				EXPORTED_SYMBOLS_FILE = A52/ACShepA52Codec.exp;
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(SYSTEM_LIBRARY_DIR)/Frameworks/ApplicationServices.framework/Versions/A/Frameworks",
-					"$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Versions/A/Frameworks",
+					"${SDK_DIR}$(SYSTEM_LIBRARY_DIR)/Frameworks/ApplicationServices.framework/Versions/A/Frameworks",
+					"${SDK_DIR}$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Versions/A/Frameworks",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"TARGET_OS_MAC=1",
@@ -1007,14 +1000,13 @@
 				HEADER_SEARCH_PATHS = (
 					liba52/include,
 					.,
-					/System/Library/Frameworks/AudioUnit.framework/Versions/A/Headers,
+					"${SDK_DIR}/System/Library/Frameworks/AudioUnit.framework/Versions/A/Headers",
 				);
 				INFOPLIST_FILE = "Info-A52Codec__Upgraded_.plist";
 				OTHER_CFLAGS = (
 					"-DIS_COMPILER_WORKING=0",
 					"-DDEBUG",
 				);
-				OTHER_REZFLAGS = "-d ppc_$ppc -d i386_$i386 -d x86_64_$x86_64 -i / -i /System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/CarbonSound.framework/Versions/A/Headers -I /System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers";
 				PRODUCT_NAME = A52Codec;
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = "-Wall";
@@ -1046,6 +1038,7 @@
 					suppress,
 				);
 				"OTHER_LDFLAGS[arch=x86_64]" = "";
+				OTHER_REZFLAGS = "-d ppc_$ppc -d i386_$i386 -d x86_64_$x86_64 -i / -i ${SDK_DIR}/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/CarbonSound.framework/Versions/A/Headers -I ${SDK_DIR}/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers";
 				PRESERVE_DEAD_CODE_INITS_AND_TERMS = YES;
 				SDKROOT = macosx;
 				STRIP_INSTALLED_PRODUCT = NO;
@@ -1077,6 +1070,7 @@
 					suppress,
 				);
 				"OTHER_LDFLAGS[arch=x86_64]" = "";
+				OTHER_REZFLAGS = "-d ppc_$ppc -d i386_$i386 -d x86_64_$x86_64 -i / -i ${SDK_DIR}/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/CarbonSound.framework/Versions/A/Headers -I ${SDK_DIR}/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers";
 				PRESERVE_DEAD_CODE_INITS_AND_TERMS = YES;
 				SDKROOT = macosx;
 				STRIP_INSTALLED_PRODUCT = NO;
