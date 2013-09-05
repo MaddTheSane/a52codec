@@ -733,8 +733,6 @@
 		F50B7AB90AAB69C800065C78 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
@@ -748,8 +746,6 @@
 		F50B7ABA0AAB69C800065C78 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -765,8 +761,6 @@
 		F529AD4A0BD7C40800F7A8D0 /* Release+Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = YES;
 				EXPORTED_SYMBOLS_FILE = A52/ACShepA52Codec.exp;
 				FRAMEWORK_SEARCH_PATHS = (
 					"${SDK_DIR}$(SYSTEM_LIBRARY_DIR)/Frameworks/ApplicationServices.framework/Versions/A/Frameworks",
@@ -794,7 +788,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				COMBINE_HIDPI_IMAGES = YES;
 				EXPORTED_SYMBOLS_FILE = AC3MovieImport/AC3MovieImport.exp;
 				FRAMEWORK_SEARCH_PATHS = (
 					"${SDK_DIR}$(SYSTEM_LIBRARY_DIR)/Frameworks/ApplicationServices.framework/Versions/A/Frameworks",
@@ -816,7 +809,6 @@
 		F529AD4C0BD7C40800F7A8D0 /* Release+Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -854,11 +846,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				GCC_ENABLE_CPP_RTTI = NO;
-				GCC_ENABLE_OBJC_GC = supported;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -878,7 +870,7 @@
 				PRESERVE_DEAD_CODE_INITS_AND_TERMS = YES;
 				SDKROOT = macosx;
 				STRIP_INSTALLED_PRODUCT = NO;
-				STRIP_STYLE = debugging;
+				STRIP_STYLE = "non-global";
 				WARNING_CFLAGS = "-Wimplicit";
 			};
 			name = "Release+Debug";
@@ -887,7 +879,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				COMBINE_HIDPI_IMAGES = YES;
 				EXPORTED_SYMBOLS_FILE = AC3MovieImport/AC3MovieImport.exp;
 				FRAMEWORK_SEARCH_PATHS = (
 					"${SDK_DIR}$(SYSTEM_LIBRARY_DIR)/Frameworks/ApplicationServices.framework/Versions/A/Frameworks",
@@ -910,7 +901,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				COMBINE_HIDPI_IMAGES = YES;
 				EXPORTED_SYMBOLS_FILE = AC3MovieImport/AC3MovieImport.exp;
 				FRAMEWORK_SEARCH_PATHS = (
 					"${SDK_DIR}$(SYSTEM_LIBRARY_DIR)/Frameworks/ApplicationServices.framework/Versions/A/Frameworks",
@@ -958,7 +948,6 @@
 		F5BDACA80A20A00000FF4884 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
 				EXPORTED_SYMBOLS_FILE = A52/ACShepA52Codec.exp;
 				FRAMEWORK_SEARCH_PATHS = (
 					"${SDK_DIR}$(SYSTEM_LIBRARY_DIR)/Frameworks/ApplicationServices.framework/Versions/A/Frameworks",
@@ -985,8 +974,6 @@
 		F5BDACA90A20A00000FF4884 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = NO;
 				EXPORTED_SYMBOLS_FILE = A52/ACShepA52Codec.exp;
 				FRAMEWORK_SEARCH_PATHS = (
 					"${SDK_DIR}$(SYSTEM_LIBRARY_DIR)/Frameworks/ApplicationServices.framework/Versions/A/Frameworks",
@@ -1018,11 +1005,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
-				COPY_PHASE_STRIP = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_CPP_RTTI = NO;
-				GCC_ENABLE_OBJC_GC = supported;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -1041,8 +1028,8 @@
 				OTHER_REZFLAGS = "-d ppc_$ppc -d i386_$i386 -d x86_64_$x86_64 -i / -i ${SDK_DIR}/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/CarbonSound.framework/Versions/A/Headers -I ${SDK_DIR}/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers";
 				PRESERVE_DEAD_CODE_INITS_AND_TERMS = YES;
 				SDKROOT = macosx;
-				STRIP_INSTALLED_PRODUCT = NO;
-				STRIP_STYLE = debugging;
+				STRIP_INSTALLED_PRODUCT = YES;
+				STRIP_STYLE = all;
 				WARNING_CFLAGS = "-Wimplicit";
 			};
 			name = Release;
@@ -1051,11 +1038,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				GCC_ENABLE_CPP_RTTI = NO;
-				GCC_ENABLE_OBJC_GC = supported;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
@@ -1074,7 +1061,7 @@
 				PRESERVE_DEAD_CODE_INITS_AND_TERMS = YES;
 				SDKROOT = macosx;
 				STRIP_INSTALLED_PRODUCT = NO;
-				STRIP_STYLE = debugging;
+				STRIP_STYLE = "non-global";
 				WARNING_CFLAGS = "-Wimplicit";
 			};
 			name = Debug;
