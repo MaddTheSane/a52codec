@@ -768,7 +768,7 @@
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"TARGET_OS_MAC=1",
-					"TARGET_CARBON=1",
+					"${inherited}",
 				);
 				HEADER_SEARCH_PATHS = (
 					liba52/include,
@@ -776,7 +776,7 @@
 					"${SDK_DIR}/System/Library/Frameworks/AudioUnit.framework/Versions/A/Headers",
 				);
 				INFOPLIST_FILE = "Info-A52Codec__Upgraded_.plist";
-				OTHER_CFLAGS = "-DIS_COMPILER_WORKING=0";
+				OTHER_CFLAGS = "$(inherited)";
 				PRODUCT_NAME = A52Codec;
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = "-Wall";
@@ -793,14 +793,14 @@
 					"${SDK_DIR}$(SYSTEM_LIBRARY_DIR)/Frameworks/ApplicationServices.framework/Versions/A/Frameworks",
 					"${SDK_DIR}$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Versions/A/Frameworks",
 				);
-				GCC_PREPROCESSOR_DEFINITIONS = "TARGET_CARBON=1";
+				GCC_PREPROCESSOR_DEFINITIONS = "${inherited}";
 				HEADER_SEARCH_PATHS = (
 					liba52/include,
 					.,
 					"${SDK_DIR}/System/Library/Frameworks/AudioUnit.framework/Versions/A/Headers",
 				);
 				INFOPLIST_FILE = "Info-AC3MovieImport.plist";
-				OTHER_CFLAGS = "-DIS_COMPILER_WORKING=0";
+				OTHER_CFLAGS = "$(inherited)";
 				PRODUCT_NAME = AC3MovieImport;
 				WRAPPER_EXTENSION = component;
 			};
@@ -853,6 +853,7 @@
 				GCC_ENABLE_CPP_RTTI = NO;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "TARGET_CARBON=1";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
 				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
@@ -861,6 +862,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_EXPAND_BUILD_SETTINGS = NO;
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				OTHER_CFLAGS = "-DIS_COMPILER_WORKING=0";
 				OTHER_LDFLAGS = (
 					"-read_only_relocs",
 					suppress,
@@ -884,14 +886,14 @@
 					"${SDK_DIR}$(SYSTEM_LIBRARY_DIR)/Frameworks/ApplicationServices.framework/Versions/A/Frameworks",
 					"${SDK_DIR}$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Versions/A/Frameworks",
 				);
-				GCC_PREPROCESSOR_DEFINITIONS = "TARGET_CARBON=1";
+				GCC_PREPROCESSOR_DEFINITIONS = "${inherited}";
 				HEADER_SEARCH_PATHS = (
 					liba52/include,
 					.,
 					"${SDK_DIR}/System/Library/Frameworks/AudioUnit.framework/Versions/A/Headers",
 				);
 				INFOPLIST_FILE = "Info-AC3MovieImport.plist";
-				OTHER_CFLAGS = "-DIS_COMPILER_WORKING=0";
+				OTHER_CFLAGS = "$(inherited)";
 				PRODUCT_NAME = AC3MovieImport;
 				WRAPPER_EXTENSION = component;
 			};
@@ -906,17 +908,15 @@
 					"${SDK_DIR}$(SYSTEM_LIBRARY_DIR)/Frameworks/ApplicationServices.framework/Versions/A/Frameworks",
 					"${SDK_DIR}$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Versions/A/Frameworks",
 				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"TARGET_CARBON=1",
-					"CoreAudio_Debug=1",
-				);
+				GCC_PREPROCESSOR_DEFINITIONS = "${inherited}";
 				HEADER_SEARCH_PATHS = (
 					liba52/include,
 					.,
 					"${SDK_DIR}/System/Library/Frameworks/AudioUnit.framework/Versions/A/Headers",
 				);
 				INFOPLIST_FILE = "Info-AC3MovieImport.plist";
-				OTHER_CFLAGS = "-DIS_COMPILER_WORKING=0";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "$(inherited)";
 				PRODUCT_NAME = AC3MovieImport;
 				WRAPPER_EXTENSION = component;
 			};
@@ -955,7 +955,7 @@
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"TARGET_OS_MAC=1",
-					"TARGET_CARBON=1",
+					"${inherited}",
 				);
 				HEADER_SEARCH_PATHS = (
 					liba52/include,
@@ -963,7 +963,7 @@
 					"${SDK_DIR}/System/Library/Frameworks/AudioUnit.framework/Versions/A/Headers",
 				);
 				INFOPLIST_FILE = "Info-A52Codec__Upgraded_.plist";
-				OTHER_CFLAGS = "-DIS_COMPILER_WORKING=0";
+				OTHER_CFLAGS = "$(inherited)";
 				PRODUCT_NAME = A52Codec;
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = "-Wall";
@@ -981,8 +981,8 @@
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"TARGET_OS_MAC=1",
-					"TARGET_CARBON=1",
-					"CoreAudio_Debug=1",
+					"${inherited}",
+					"DEBUG=1",
 				);
 				HEADER_SEARCH_PATHS = (
 					liba52/include,
@@ -990,10 +990,7 @@
 					"${SDK_DIR}/System/Library/Frameworks/AudioUnit.framework/Versions/A/Headers",
 				);
 				INFOPLIST_FILE = "Info-A52Codec__Upgraded_.plist";
-				OTHER_CFLAGS = (
-					"-DIS_COMPILER_WORKING=0",
-					"-DDEBUG",
-				);
+				OTHER_CFLAGS = "$(inherited)";
 				PRODUCT_NAME = A52Codec;
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = "-Wall";
@@ -1012,6 +1009,7 @@
 				GCC_ENABLE_CPP_RTTI = NO;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "TARGET_CARBON=1";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
 				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
@@ -1020,6 +1018,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_EXPAND_BUILD_SETTINGS = NO;
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				OTHER_CFLAGS = "-DIS_COMPILER_WORKING=0";
 				OTHER_LDFLAGS = (
 					"-read_only_relocs",
 					suppress,
@@ -1044,6 +1043,10 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				GCC_ENABLE_CPP_RTTI = NO;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"TARGET_CARBON=1",
+					"CoreAudio_Debug=1",
+				);
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
 				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
@@ -1052,6 +1055,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_EXPAND_BUILD_SETTINGS = NO;
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-DIS_COMPILER_WORKING=0";
 				OTHER_LDFLAGS = (
 					"-read_only_relocs",
 					suppress,
