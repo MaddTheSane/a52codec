@@ -1028,7 +1028,7 @@
 				PRESERVE_DEAD_CODE_INITS_AND_TERMS = YES;
 				SDKROOT = macosx;
 				STRIP_INSTALLED_PRODUCT = YES;
-				STRIP_STYLE = all;
+				STRIP_STYLE = debugging;
 				WARNING_CFLAGS = "-Wimplicit";
 			};
 			name = Release;
