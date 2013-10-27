@@ -976,7 +976,6 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"TARGET_OS_MAC=1",
 					"${inherited}",
-					"DEBUG=1",
 				);
 				HEADER_SEARCH_PATHS = (
 					liba52/include,
@@ -1038,6 +1037,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"TARGET_CARBON=1",
 					"CoreAudio_Debug=1",
+					"DEBUG=1",
 				);
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
