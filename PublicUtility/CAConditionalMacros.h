@@ -52,7 +52,7 @@
 // but for now, use this as a way to define __COREAUDIO_USE_FLAT_INCLUDES__ programmatically
 
 //	TargetConditionals.h defines the bare minimum we need
-#include "TargetConditionals.h"
+#include <TargetConditionals.h>
 
 //	Determine whether or not to use framework style includes for system headers
 #if !defined(CoreAudio_Use_Framework_Includes)
@@ -66,7 +66,7 @@
 //	Include the regular ConditionalMacros.h too, since it has useful stuff that
 //	TargetConditionals.h lacks for some reason.
 #if	CoreAudio_Use_Framework_Includes
-	#include <CoreServices/../Frameworks/CarbonCore.framework/Headers/ConditionalMacros.h>
+	#include <ConditionalMacros.h>
 #else
 	#include "ConditionalMacros.h"
 #endif
