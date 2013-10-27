@@ -778,7 +778,6 @@
 				INFOPLIST_FILE = "Info-A52Codec__Upgraded_.plist";
 				OTHER_CFLAGS = "$(inherited)";
 				PRODUCT_NAME = A52Codec;
-				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = "-Wall";
 				WRAPPER_EXTENSION = component;
 			};
@@ -827,7 +826,6 @@
 				COPY_PHASE_STRIP = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				PRODUCT_NAME = "Build Both";
-				ZERO_LINK = NO;
 			};
 			name = "Release+Debug";
 		};
@@ -838,7 +836,6 @@
 				COPY_PHASE_STRIP = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				PRODUCT_NAME = Debug;
-				ZERO_LINK = NO;
 			};
 			name = "Release+Debug";
 		};
@@ -860,7 +857,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VALUE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_EXPAND_BUILD_SETTINGS = NO;
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "-DIS_COMPILER_WORKING=0";
 				OTHER_LDFLAGS = (
@@ -929,7 +925,6 @@
 				COPY_PHASE_STRIP = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				PRODUCT_NAME = Debug;
-				ZERO_LINK = NO;
 			};
 			name = Release;
 		};
@@ -965,7 +960,6 @@
 				INFOPLIST_FILE = "Info-A52Codec__Upgraded_.plist";
 				OTHER_CFLAGS = "$(inherited)";
 				PRODUCT_NAME = A52Codec;
-				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = "-Wall";
 				WRAPPER_EXTENSION = component;
 			};
@@ -992,7 +986,6 @@
 				INFOPLIST_FILE = "Info-A52Codec__Upgraded_.plist";
 				OTHER_CFLAGS = "$(inherited)";
 				PRODUCT_NAME = A52Codec;
-				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = "-Wall";
 				WRAPPER_EXTENSION = component;
 			};
@@ -1016,7 +1009,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VALUE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_EXPAND_BUILD_SETTINGS = NO;
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "-DIS_COMPILER_WORKING=0";
 				OTHER_LDFLAGS = (
@@ -1053,7 +1045,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VALUE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_EXPAND_BUILD_SETTINGS = NO;
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "-DIS_COMPILER_WORKING=0";
@@ -1078,7 +1069,6 @@
 				COPY_PHASE_STRIP = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				PRODUCT_NAME = "Build Both";
-				ZERO_LINK = NO;
 			};
 			name = Release;
 		};
