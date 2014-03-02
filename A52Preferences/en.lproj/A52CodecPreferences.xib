@@ -47,7 +47,7 @@ Gw
                         </connections>
                     </button>
                     <textField verticalHuggingPriority="750" id="344">
-                        <rect key="frame" x="17" y="91" width="167" height="17"/>
+                        <rect key="frame" x="18" y="90" width="167" height="17"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="Output:" id="345">
                             <font key="font" metaFont="system"/>
@@ -60,7 +60,7 @@ Gw
                         <autoresizingMask key="autoresizingMask"/>
                         <popUpButtonCell key="cell" type="push" title="Stereo" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" inset="2" arrowPosition="arrowAtCenter" preferredEdge="maxY" selectedItem="351" id="347">
                             <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
+                            <font key="font" metaFont="menu"/>
                             <menu key="menu" title="OtherViews" id="348">
                                 <items>
                                     <menuItem title="Stereo" state="on" id="351"/>
@@ -75,7 +75,7 @@ Gw
                         </connections>
                     </popUpButton>
                     <textField verticalHuggingPriority="750" id="353">
-                        <rect key="frame" x="17" y="63" width="162" height="17"/>
+                        <rect key="frame" x="18" y="59" width="162" height="17"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="Make Soft Sounds Play:" id="354">
                             <font key="font" metaFont="system"/>
@@ -84,11 +84,11 @@ Gw
                         </textFieldCell>
                     </textField>
                     <popUpButton verticalHuggingPriority="750" id="355">
-                        <rect key="frame" x="216" y="56" width="173" height="26"/>
+                        <rect key="frame" x="216" y="53" width="173" height="26"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <popUpButtonCell key="cell" type="push" title="Normally" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" inset="2" arrowPosition="arrowAtCenter" preferredEdge="maxY" selectedItem="359" id="356">
                             <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
+                            <font key="font" metaFont="menu"/>
                             <menu key="menu" title="OtherViews" id="357">
                                 <items>
                                     <menuItem title="Normally" state="on" id="359"/>
@@ -167,7 +167,7 @@ Gw
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <textField verticalHuggingPriority="750" id="375">
-                        <rect key="frame" x="17" y="118" width="306" height="17"/>
+                        <rect key="frame" x="18" y="115" width="306" height="17"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="Dynamic Range Compression (default is 1):" id="376">
                             <font key="font" metaFont="system"/>
