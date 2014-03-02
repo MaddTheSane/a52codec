@@ -36,10 +36,10 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		557A9B5C18C3F1760058161A /* A52CodecPreferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = 557A9B5A18C3F1760058161A /* A52CodecPreferences.xib */; };
 		F508127A0A21251C0092BF70 /* ACSimpleCodec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F51A93080287A1A201000102 /* ACSimpleCodec.cpp */; };
 		F508127C0A21251F0092BF70 /* ACSimpleCodec.h in Headers */ = {isa = PBXBuildFile; fileRef = F51A93090287A1A201000102 /* ACSimpleCodec.h */; };
 		F50B7AC80AAB6E6000065C78 /* A52Preferences.m in Sources */ = {isa = PBXBuildFile; fileRef = F50B7AC70AAB6E6000065C78 /* A52Preferences.m */; };
-		F50B7AD50AAB6E9500065C78 /* A52CodecPreferences.nib in Resources */ = {isa = PBXBuildFile; fileRef = F50B7AD40AAB6E9500065C78 /* A52CodecPreferences.nib */; };
 		F50B7AD70AAB6EBA00065C78 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F50B7AD60AAB6EBA00065C78 /* main.m */; };
 		F50B7B460AAB751E00065C78 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F50B7B450AAB751E00065C78 /* Foundation.framework */; };
 		F50B7BC60AAB753500065C78 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F50B7BC50AAB753500065C78 /* AppKit.framework */; };
@@ -170,6 +170,7 @@
 		07EF4C2804F19AA700CA25C5 /* AudioCodecComponentGlue.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = AudioCodecComponentGlue.c; sourceTree = SOURCE_ROOT; };
 		0A9B063104D728440070DEF0 /* GetCodecBundle.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = GetCodecBundle.cpp; sourceTree = "<group>"; };
 		0A9B063204D728440070DEF0 /* GetCodecBundle.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = GetCodecBundle.h; sourceTree = "<group>"; };
+		557A9B5B18C3F1760058161A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/A52CodecPreferences.xib; sourceTree = "<group>"; };
 		55C0663F173C554500D8CF2C /* Info-AC3MovieImport.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-AC3MovieImport.plist"; sourceTree = SOURCE_ROOT; };
 		6535B19006694BFC00059066 /* ACShepA52Codec.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = ACShepA52Codec.cpp; sourceTree = "<group>"; };
 		6535B19106694BFC00059066 /* ACShepA52Codec.exp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.exports; path = ACShepA52Codec.exp; sourceTree = "<group>"; };
@@ -192,7 +193,6 @@
 		F50815870A2161180092BF70 /* XCAResources.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; path = XCAResources.r; sourceTree = "<group>"; };
 		F50B7AB50AAB69C600065C78 /* A52Preferences.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = A52Preferences.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F50B7AB70AAB69C700065C78 /* Preferences-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Preferences-Info.plist"; sourceTree = "<group>"; };
-		F50B7AC40AAB6E3F00065C78 /* en */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = en; path = en.lproj/A52CodecPreferences.nib; sourceTree = "<group>"; };
 		F50B7AC60AAB6E6000065C78 /* A52Preferences.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = A52Preferences.h; sourceTree = "<group>"; };
 		F50B7AC70AAB6E6000065C78 /* A52Preferences.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = A52Preferences.m; sourceTree = "<group>"; };
 		F50B7AD60AAB6EBA00065C78 /* main.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -330,7 +330,7 @@
 				F50B7AD60AAB6EBA00065C78 /* main.m */,
 				F50B7AC60AAB6E6000065C78 /* A52Preferences.h */,
 				F50B7AC70AAB6E6000065C78 /* A52Preferences.m */,
-				F50B7AD40AAB6E9500065C78 /* A52CodecPreferences.nib */,
+				557A9B5A18C3F1760058161A /* A52CodecPreferences.xib */,
 				F50B7AB70AAB69C700065C78 /* Preferences-Info.plist */,
 			);
 			path = A52Preferences;
@@ -598,7 +598,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F50B7AD50AAB6E9500065C78 /* A52CodecPreferences.nib in Resources */,
+				557A9B5C18C3F1760058161A /* A52CodecPreferences.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -713,12 +713,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F50B7AD40AAB6E9500065C78 /* A52CodecPreferences.nib */ = {
+		557A9B5A18C3F1760058161A /* A52CodecPreferences.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F50B7AC40AAB6E3F00065C78 /* en */,
+				557A9B5B18C3F1760058161A /* en */,
 			);
-			name = A52CodecPreferences.nib;
+			name = A52CodecPreferences.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
