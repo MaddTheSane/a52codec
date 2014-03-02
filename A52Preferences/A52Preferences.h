@@ -2,7 +2,7 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface A52Preferences : NSObject
+@interface A52Preferences : NSObject <NSWindowDelegate>
 {
 	IBOutlet NSWindow					*window_mainWindow;
 	IBOutlet NSPopUpButton				*popup_ac3DynamicRangeType;
@@ -17,6 +17,10 @@
 	float								savedDynValue;
 	int									twoChannelMode;
 }
+@property (retain) NSUserDefaults *defaults;
+@property float dynValue;
+@property float savedDynValue;
+@property int twoChannelMode;
 
 - (IBAction)setAC3DynamicRangePopup:(id)sender;
 - (IBAction)set2ChannelModePopup:(id)sender;

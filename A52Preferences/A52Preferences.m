@@ -10,19 +10,21 @@
 #define PASSTHROUGH_KEY @"attemptPassthrough"
 #define TWO_CHANNEL_KEY @"twoChannelMode"
 
-@interface A52Preferences (private)
+@interface A52Preferences ()
 - (void)setAC3DynamicRange:(float)newVal;
 @end
 
 @implementation A52Preferences
+@synthesize defaults;
+@synthesize dynValue;
+@synthesize savedDynValue;
+@synthesize twoChannelMode;
 
 - (id)init
 {
-	self = [super init];
-	if(self == nil)
-		return nil;
-	
-	defaults = [[NSUserDefaults standardUserDefaults] retain];
+	if (self = [super init]) {
+		self.defaults = [NSUserDefaults standardUserDefaults];
+	}
 	return self;
 }
 
@@ -44,8 +46,7 @@
 		[self setAC3DynamicRange:[defaults floatForKey:DYNAMIC_RANGE_KEY]];
 	else
 		[self setAC3DynamicRange:1.0];
-	if([defaults objectForKey:TWO_CHANNEL_KEY] != nil)
-	{
+	if ([defaults objectForKey:TWO_CHANNEL_KEY] != nil) {
 		twoChannelMode = [defaults integerForKey:TWO_CHANNEL_KEY];
 
 		/* sanity checks */
@@ -55,24 +56,24 @@
 			twoChannelMode = A52_DOLBY;
 		}
 		twoChannelMode &= ~A52_ADJUST_LEVEL & ~A52_LFE;
-	}
-	else
-	{
+	} else {
 		[self upgradeOldPrefs];
 	}
 	[defaults removeObjectForKey:USE_STEREO_KEY];
 	[defaults removeObjectForKey:USE_DPLII_KEY];
-	switch(twoChannelMode)
-	{
+	switch (twoChannelMode) {
 		case A52_STEREO:
 			[popup_OutputMode selectItemAtIndex:0];
 			break;
+			
 		case A52_DOLBY:
 			[popup_OutputMode selectItemAtIndex:1];
 			break;
+			
 		case A52_DOLBY | A52_USE_DPLII:
 			[popup_OutputMode selectItemAtIndex:2];
 			break;
+			
 		default:
 			[popup_OutputMode selectItemAtIndex:3];
 			break;
@@ -81,25 +82,27 @@
 
 - (void)dealloc
 {
-	[defaults release];
+	self.defaults = nil;
 	[super dealloc];
 }
 
 - (IBAction)setAC3DynamicRangePopup:(id)sender
 {
-	int selected = [popup_ac3DynamicRangeType indexOfSelectedItem];
-	switch(selected)
-	{
+	NSInteger selected = [popup_ac3DynamicRangeType indexOfSelectedItem];
+	switch (selected) {
 		case 0:
 			[self setAC3DynamicRange:1.0];
 			break;
+			
 		case 1:
 			[self setAC3DynamicRange:2.0];
 			break;
+			
 		case 3:
 			savedDynValue = dynValue;
 			[NSApp beginSheet:window_dynRangeSheet modalForWindow:window_mainWindow modalDelegate:nil didEndSelector:nil contextInfo:NULL];
 			break;
+			
 		default:
 			break;
 	}
@@ -107,20 +110,24 @@
 
 - (IBAction)set2ChannelModePopup:(id)sender;
 {
-	int selected = [popup_OutputMode indexOfSelectedItem];
-	switch(selected)
-	{
+	NSInteger selected = [popup_OutputMode indexOfSelectedItem];
+	switch (selected) {
 		case 0:
 			twoChannelMode = A52_STEREO;
 			break;
+			
 		case 1:
 			twoChannelMode = A52_DOLBY;
 			break;
+			
 		case 2:
 			twoChannelMode = A52_DOLBY | A52_USE_DPLII;
 			break;
+			
 		case 3:
 			twoChannelMode = 0;
+			break;
+			
 		default:
 			break;
 	}	
@@ -136,9 +143,9 @@
     dynValue = newVal;
     [textField_ac3DynamicRangeValue setFloatValue:newVal];
     [slider_ac3DynamicRangeSlider setFloatValue:newVal];
-	if(newVal == 1.0)
+	if (newVal == 1.0)
 		[popup_ac3DynamicRangeType selectItemAtIndex:0];
-	else if(newVal == 2.0)
+	else if (newVal == 2.0)
 		[popup_ac3DynamicRangeType selectItemAtIndex:1];
 	else
 		[popup_ac3DynamicRangeType selectItemAtIndex:3];
@@ -162,13 +169,13 @@
 {
 	[self setAC3DynamicRange:savedDynValue];
 	[NSApp endSheet:window_dynRangeSheet];
-	[window_dynRangeSheet orderOut:self];
+	[window_dynRangeSheet orderOut:sender];
 }
 
 - (IBAction)saveDynRangeSheet:(id)sender;
 {
 	[NSApp endSheet:window_dynRangeSheet];
-	[window_dynRangeSheet orderOut:self];
+	[window_dynRangeSheet orderOut:sender];
 }
 
 - (IBAction)cancel:(id)sender
