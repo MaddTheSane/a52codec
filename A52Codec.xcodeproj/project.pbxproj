@@ -566,7 +566,7 @@
 		F5A548DE02879EB701000102 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 			};
 			buildConfigurationList = F5BDACAF0A20A00100FF4884 /* Build configuration list for PBXProject "A52Codec" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -755,6 +755,7 @@
 		F529AD4A0BD7C40800F7A8D0 /* Release+Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				EXPORTED_SYMBOLS_FILE = A52/ACShepA52Codec.exp;
 				FRAMEWORK_SEARCH_PATHS = (
 					"${SDK_DIR}$(SYSTEM_LIBRARY_DIR)/Frameworks/ApplicationServices.framework/Versions/A/Frameworks",
@@ -836,7 +837,6 @@
 		F529AD4F0BD7C40800F7A8D0 /* Release+Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = YES;
@@ -937,6 +937,7 @@
 		F5BDACA80A20A00000FF4884 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				EXPORTED_SYMBOLS_FILE = A52/ACShepA52Codec.exp;
 				FRAMEWORK_SEARCH_PATHS = (
 					"${SDK_DIR}$(SYSTEM_LIBRARY_DIR)/Frameworks/ApplicationServices.framework/Versions/A/Frameworks",
@@ -962,6 +963,7 @@
 		F5BDACA90A20A00000FF4884 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				EXPORTED_SYMBOLS_FILE = A52/ACShepA52Codec.exp;
 				FRAMEWORK_SEARCH_PATHS = (
 					"${SDK_DIR}$(SYSTEM_LIBRARY_DIR)/Frameworks/ApplicationServices.framework/Versions/A/Frameworks",
@@ -987,7 +989,6 @@
 		F5BDACB00A20A00100FF4884 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEAD_CODE_STRIPPING = YES;
@@ -1021,7 +1022,6 @@
 		F5BDACB10A20A00100FF4884 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = NO;
