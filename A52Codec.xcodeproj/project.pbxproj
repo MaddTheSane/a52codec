@@ -165,12 +165,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0724C23C05B4963A00AC8248 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = /System/Library/Frameworks/AudioUnit.framework; sourceTree = "<absolute>"; };
-		07DBCC4D04F56F9100CA25C5 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
+		0724C23C05B4963A00AC8248 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		07DBCC4D04F56F9100CA25C5 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
 		07EF4C2804F19AA700CA25C5 /* AudioCodecComponentGlue.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = AudioCodecComponentGlue.c; sourceTree = SOURCE_ROOT; };
-		0A9B063104D728440070DEF0 /* GetCodecBundle.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = GetCodecBundle.cpp; sourceTree = "<group>"; };
-		0A9B063204D728440070DEF0 /* GetCodecBundle.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = GetCodecBundle.h; sourceTree = "<group>"; };
+		0A9B063104D728440070DEF0 /* GetCodecBundle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GetCodecBundle.cpp; sourceTree = "<group>"; };
+		0A9B063204D728440070DEF0 /* GetCodecBundle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GetCodecBundle.h; sourceTree = "<group>"; };
 		557A9B5B18C3F1760058161A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/A52CodecPreferences.xib; sourceTree = "<group>"; };
+		55B82712198EE6EB00E3D14A /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		55C0663F173C554500D8CF2C /* Info-AC3MovieImport.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-AC3MovieImport.plist"; sourceTree = SOURCE_ROOT; };
 		6535B19006694BFC00059066 /* ACShepA52Codec.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = ACShepA52Codec.cpp; sourceTree = "<group>"; };
 		6535B19106694BFC00059066 /* ACShepA52Codec.exp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.exports; path = ACShepA52Codec.exp; sourceTree = "<group>"; };
@@ -189,22 +190,22 @@
 		658FF1E406694F01003F9757 /* CASampleTools.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CASampleTools.h; sourceTree = "<group>"; };
 		658FF1ED06694F4F003F9757 /* CAStreamBasicDescription.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = CAStreamBasicDescription.cpp; sourceTree = "<group>"; };
 		658FF1F206694F67003F9757 /* CALogMacros.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CALogMacros.h; sourceTree = "<group>"; };
-		65CB364E066A1FA900A75A43 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = /System/Library/Frameworks/CoreAudio.framework; sourceTree = "<absolute>"; };
+		65CB364E066A1FA900A75A43 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		F50815870A2161180092BF70 /* XCAResources.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; path = XCAResources.r; sourceTree = "<group>"; };
 		F50B7AB50AAB69C600065C78 /* A52Preferences.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = A52Preferences.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F50B7AB70AAB69C700065C78 /* Preferences-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Preferences-Info.plist"; sourceTree = "<group>"; };
 		F50B7AC60AAB6E6000065C78 /* A52Preferences.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = A52Preferences.h; sourceTree = "<group>"; };
 		F50B7AC70AAB6E6000065C78 /* A52Preferences.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = A52Preferences.m; sourceTree = "<group>"; };
 		F50B7AD60AAB6EBA00065C78 /* main.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		F50B7B450AAB751E00065C78 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
-		F50B7BC50AAB753500065C78 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		F50B7B450AAB751E00065C78 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F50B7BC50AAB753500065C78 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		F51A93000287A1A201000102 /* ACBaseCodec.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ACBaseCodec.cpp; sourceTree = "<group>"; };
 		F51A93010287A1A201000102 /* ACBaseCodec.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ACBaseCodec.h; sourceTree = "<group>"; };
 		F51A93020287A1A201000102 /* ACCodec.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ACCodec.cpp; sourceTree = "<group>"; };
 		F51A93030287A1A201000102 /* ACCodec.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ACCodec.h; sourceTree = "<group>"; };
 		F51A93040287A1A201000102 /* ACCodecDispatch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ACCodecDispatch.h; sourceTree = "<group>"; };
 		F51A93050287A1A201000102 /* ACCodecDispatchTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ACCodecDispatchTypes.h; sourceTree = "<group>"; };
-		F51A93060287A1A201000102 /* ACComponentResources.r */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.rez; path = ACComponentResources.r; sourceTree = "<group>"; };
+		F51A93060287A1A201000102 /* ACComponentResources.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; path = ACComponentResources.r; sourceTree = "<group>"; };
 		F51A93070287A1A201000102 /* ACConditionalMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ACConditionalMacros.h; sourceTree = "<group>"; };
 		F51A93080287A1A201000102 /* ACSimpleCodec.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ACSimpleCodec.cpp; sourceTree = "<group>"; };
 		F51A93090287A1A201000102 /* ACSimpleCodec.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ACSimpleCodec.h; sourceTree = "<group>"; };
@@ -216,11 +217,11 @@
 		F5525E020A3BF7D700F36B86 /* debug.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = debug.h; sourceTree = "<group>"; };
 		F5525E030A3BF7D700F36B86 /* versions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = versions.h; sourceTree = "<group>"; };
 		F5536FA50A3BF89E00969CA8 /* AC3MovieImport.exp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.exports; path = AC3MovieImport.exp; sourceTree = "<group>"; };
-		F5536FB10A3BF8E800969CA8 /* QuickTime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickTime.framework; path = /System/Library/Frameworks/QuickTime.framework; sourceTree = "<absolute>"; };
+		F5536FB10A3BF8E800969CA8 /* QuickTime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickTime.framework; path = System/Library/Frameworks/QuickTime.framework; sourceTree = SDKROOT; };
 		F56BC7E30D773F63009A9DAE /* crc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = crc.c; sourceTree = "<group>"; };
 		F56BC7E70D773F77009A9DAE /* cpu_accel.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cpu_accel.c; sourceTree = "<group>"; };
 		F56BC7EB0D773F7F009A9DAE /* cpu_state.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cpu_state.c; sourceTree = "<group>"; };
-		F5A548EC0287A16D01000102 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = /System/Library/Frameworks/CoreServices.framework; sourceTree = "<absolute>"; };
+		F5A548EC0287A16D01000102 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
 		F5BDACAC0A20A00000FF4884 /* Info-A52Codec__Upgraded_.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info-A52Codec__Upgraded_.plist"; path = "../Info-A52Codec__Upgraded_.plist"; sourceTree = "<group>"; };
 		F5BDACAD0A20A00000FF4884 /* A52Codec.component */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = A52Codec.component; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5BDACBC0A20A03200FF4884 /* a52.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = a52.h; sourceTree = "<group>"; };
@@ -236,9 +237,9 @@
 		F5BDACCF0A20A03200FF4884 /* parse.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = parse.c; sourceTree = "<group>"; };
 		F5BDACD00A20A03200FF4884 /* tables.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = tables.h; sourceTree = "<group>"; };
 		F5BDACFA0A20A11D00FF4884 /* ACShepA52Decoder.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = ACShepA52Decoder.cpp; sourceTree = "<group>"; };
-		F5D1FBD80E7826C20092B612 /* CABundleLocker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CABundleLocker.h; sourceTree = "<group>"; };
-		F5D1FBD90E7826C20092B612 /* ACCompatibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACCompatibility.h; sourceTree = "<group>"; };
-		F5D1FBE40E7827C30092B612 /* CABundleLocker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CABundleLocker.cpp; sourceTree = "<group>"; };
+		F5D1FBD80E7826C20092B612 /* CABundleLocker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CABundleLocker.h; sourceTree = "<group>"; };
+		F5D1FBD90E7826C20092B612 /* ACCompatibility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ACCompatibility.h; sourceTree = "<group>"; };
+		F5D1FBE40E7827C30092B612 /* CABundleLocker.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CABundleLocker.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -397,6 +398,7 @@
 				F5BDACB70A20A01C00FF4884 /* liba52 */,
 				F5525DFD0A3BF7D700F36B86 /* AC3MovieImport */,
 				F50B7AC20AAB69F000065C78 /* A52Preferences */,
+				55B82712198EE6EB00E3D14A /* PrefixHeader.pch */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -728,8 +730,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
 				INFOPLIST_FILE = "A52Preferences/Preferences-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				PRODUCT_NAME = A52Preferences;
@@ -743,8 +743,6 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
 				INFOPLIST_FILE = "A52Preferences/Preferences-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				PRODUCT_NAME = A52Preferences;
@@ -788,6 +786,7 @@
 					"${SDK_DIR}$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Versions/A/Frameworks",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = "${inherited}";
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
 				HEADER_SEARCH_PATHS = (
 					liba52/include,
 					.,
@@ -805,8 +804,6 @@
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
 				INFOPLIST_FILE = "A52Preferences/Preferences-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				PRODUCT_NAME = A52Preferences;
@@ -837,13 +834,16 @@
 		F529AD4F0BD7C40800F7A8D0 /* Release+Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				GCC_ENABLE_CPP_RTTI = NO;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = PrefixHeader.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = "TARGET_CARBON=1";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
@@ -851,7 +851,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VALUE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				OTHER_CFLAGS = "-DIS_COMPILER_WORKING=0";
 				OTHER_LDFLAGS = (
 					"-read_only_relocs",
@@ -877,6 +877,7 @@
 					"${SDK_DIR}$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Versions/A/Frameworks",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = "${inherited}";
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
 				HEADER_SEARCH_PATHS = (
 					liba52/include,
 					.,
@@ -899,6 +900,7 @@
 					"${SDK_DIR}$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Versions/A/Frameworks",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = "${inherited}";
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
 				HEADER_SEARCH_PATHS = (
 					liba52/include,
 					.,
@@ -989,13 +991,16 @@
 		F5BDACB00A20A00100FF4884 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_CPP_RTTI = NO;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = PrefixHeader.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = "TARGET_CARBON=1";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
@@ -1003,7 +1008,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VALUE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				OTHER_CFLAGS = "-DIS_COMPILER_WORKING=0";
 				OTHER_LDFLAGS = (
 					"-read_only_relocs",
@@ -1022,12 +1027,15 @@
 		F5BDACB10A20A00100FF4884 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				GCC_ENABLE_CPP_RTTI = NO;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = PrefixHeader.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"TARGET_CARBON=1",
 					"CoreAudio_Debug=1",
@@ -1039,7 +1047,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VALUE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "-DIS_COMPILER_WORKING=0";
 				OTHER_LDFLAGS = (

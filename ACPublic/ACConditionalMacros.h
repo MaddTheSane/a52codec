@@ -1,4 +1,4 @@
-/*	Copyright © 2007 Apple Inc. All Rights Reserved.
+/*	Copyright Â© 2007 Apple Inc. All Rights Reserved.
 	
 	Disclaimer: IMPORTANT:  This Apple software is supplied to you by 
 			Apple Inc. ("Apple") in consideration of your agreement to the
@@ -59,7 +59,7 @@
 #endif
 
 #if	AC_Use_Framework_Includes
-	#include <CoreServices/../Frameworks/CarbonCore.framework/Headers/ConditionalMacros.h>
+	#include <ConditionalMacros.h>
 #else
 	#include "ConditionalMacros.h"
 #endif

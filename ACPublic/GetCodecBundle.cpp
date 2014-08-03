@@ -1,4 +1,4 @@
-/*	Copyright © 2007 Apple Inc. All Rights Reserved.
+/*	Copyright Â© 2007 Apple Inc. All Rights Reserved.
 	
 	Disclaimer: IMPORTANT:  This Apple software is supplied to you by 
 			Apple Inc. ("Apple") in consideration of your agreement to the
@@ -44,7 +44,7 @@
 	#include "CAWin32StringResources.h"
 #endif
 
-const CFStringRef kCodecBundleID = CFSTR("com.mycompany.myformat"); // must match CFBundleIdentifier in plist file
+const CFStringRef kCodecBundleID = CFSTR("com.shepmater.A52Codec"); // must match CFBundleIdentifier in plist file
 
 CFBundleRef GetCodecBundle()
 {
