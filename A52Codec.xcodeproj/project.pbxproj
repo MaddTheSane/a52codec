@@ -59,7 +59,7 @@
 		F5525DED0A3BF78A00F36B86 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07DBCC4D04F56F9100CA25C5 /* Carbon.framework */; };
 		F5525DEE0A3BF78A00F36B86 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0724C23C05B4963A00AC8248 /* AudioUnit.framework */; };
 		F5525DEF0A3BF78A00F36B86 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65CB364E066A1FA900A75A43 /* CoreAudio.framework */; };
-		F5525E040A3BF7D700F36B86 /* AC3MovieImport.c in Sources */ = {isa = PBXBuildFile; fileRef = F5525DFE0A3BF7D700F36B86 /* AC3MovieImport.c */; };
+		F5525E040A3BF7D700F36B86 /* AC3MovieImport.c in Sources */ = {isa = PBXBuildFile; fileRef = F5525DFE0A3BF7D700F36B86 /* AC3MovieImport.c */; settings = {COMPILER_FLAGS = "-fno-modules"; }; };
 		F5525E050A3BF7D700F36B86 /* AC3MovieImport.r in Rez */ = {isa = PBXBuildFile; fileRef = F5525DFF0A3BF7D700F36B86 /* AC3MovieImport.r */; };
 		F5525E060A3BF7D700F36B86 /* AC3MovieImport_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = F5525E000A3BF7D700F36B86 /* AC3MovieImport_Prefix.pch */; };
 		F5525E070A3BF7D700F36B86 /* AC3MovieImportDispatch.h in Headers */ = {isa = PBXBuildFile; fileRef = F5525E010A3BF7D700F36B86 /* AC3MovieImportDispatch.h */; };
@@ -761,7 +761,7 @@
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"TARGET_OS_MAC=1",
-					"${inherited}",
+					"$(inherited)",
 				);
 				HEADER_SEARCH_PATHS = (
 					liba52/include,
@@ -785,7 +785,6 @@
 					"${SDK_DIR}$(SYSTEM_LIBRARY_DIR)/Frameworks/ApplicationServices.framework/Versions/A/Frameworks",
 					"${SDK_DIR}$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Versions/A/Frameworks",
 				);
-				GCC_PREPROCESSOR_DEFINITIONS = "${inherited}";
 				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
 				HEADER_SEARCH_PATHS = (
 					liba52/include,
@@ -836,6 +835,7 @@
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = YES;
@@ -876,7 +876,6 @@
 					"${SDK_DIR}$(SYSTEM_LIBRARY_DIR)/Frameworks/ApplicationServices.framework/Versions/A/Frameworks",
 					"${SDK_DIR}$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Versions/A/Frameworks",
 				);
-				GCC_PREPROCESSOR_DEFINITIONS = "${inherited}";
 				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
 				HEADER_SEARCH_PATHS = (
 					liba52/include,
@@ -899,7 +898,6 @@
 					"${SDK_DIR}$(SYSTEM_LIBRARY_DIR)/Frameworks/ApplicationServices.framework/Versions/A/Frameworks",
 					"${SDK_DIR}$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Versions/A/Frameworks",
 				);
-				GCC_PREPROCESSOR_DEFINITIONS = "${inherited}";
 				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
 				HEADER_SEARCH_PATHS = (
 					liba52/include,
@@ -947,7 +945,7 @@
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"TARGET_OS_MAC=1",
-					"${inherited}",
+					"$(inherited)",
 				);
 				HEADER_SEARCH_PATHS = (
 					liba52/include,
@@ -973,7 +971,7 @@
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"TARGET_OS_MAC=1",
-					"${inherited}",
+					"$(inherited)",
 				);
 				HEADER_SEARCH_PATHS = (
 					liba52/include,
@@ -993,6 +991,7 @@
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEAD_CODE_STRIPPING = YES;
@@ -1029,6 +1028,7 @@
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = NO;
