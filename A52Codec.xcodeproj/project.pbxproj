@@ -568,7 +568,7 @@
 		F5A548DE02879EB701000102 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0610;
 			};
 			buildConfigurationList = F5BDACAF0A20A00100FF4884 /* Build configuration list for PBXProject "A52Codec" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -753,13 +753,14 @@
 		F529AD4A0BD7C40800F7A8D0 /* Release+Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				EXPORTED_SYMBOLS_FILE = A52/ACShepA52Codec.exp;
 				FRAMEWORK_SEARCH_PATHS = (
 					"${SDK_DIR}$(SYSTEM_LIBRARY_DIR)/Frameworks/ApplicationServices.framework/Versions/A/Frameworks",
 					"${SDK_DIR}$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Versions/A/Frameworks",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
+					"ARCH_X86=1",
+					"ACCEL_DETECT=1",
 					"TARGET_OS_MAC=1",
 					"$(inherited)",
 				);
@@ -833,18 +834,24 @@
 		F529AD4F0BD7C40800F7A8D0 /* Release+Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"ARCH_PREPROCESSOR_DEFINITIONS[arch=i386]" = "ARCH_X86=1";
+				"ARCH_PREPROCESSOR_DEFINITIONS[arch=x86_64]" = "ARCH_X86=1";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = YES;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = PrefixHeader.pch;
-				GCC_PREPROCESSOR_DEFINITIONS = "TARGET_CARBON=1";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"TARGET_CARBON=1",
+					"ACCEL_DETECT=1",
+					"$(ARCH_PREPROCESSOR_DEFINITIONS)",
+				);
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
 				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
@@ -937,13 +944,14 @@
 		F5BDACA80A20A00000FF4884 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				EXPORTED_SYMBOLS_FILE = A52/ACShepA52Codec.exp;
 				FRAMEWORK_SEARCH_PATHS = (
 					"${SDK_DIR}$(SYSTEM_LIBRARY_DIR)/Frameworks/ApplicationServices.framework/Versions/A/Frameworks",
 					"${SDK_DIR}$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Versions/A/Frameworks",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
+					"ARCH_X86=1",
+					"ACCEL_DETECT=1",
 					"TARGET_OS_MAC=1",
 					"$(inherited)",
 				);
@@ -963,7 +971,6 @@
 		F5BDACA90A20A00000FF4884 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				EXPORTED_SYMBOLS_FILE = A52/ACShepA52Codec.exp;
 				FRAMEWORK_SEARCH_PATHS = (
 					"${SDK_DIR}$(SYSTEM_LIBRARY_DIR)/Frameworks/ApplicationServices.framework/Versions/A/Frameworks",
@@ -989,6 +996,8 @@
 		F5BDACB00A20A00100FF4884 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"ARCH_PREPROCESSOR_DEFINITIONS[arch=i386]" = "ARCH_X86=1";
+				"ARCH_PREPROCESSOR_DEFINITIONS[arch=x86_64]" = "ARCH_X86=1";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -1000,7 +1009,11 @@
 				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = PrefixHeader.pch;
-				GCC_PREPROCESSOR_DEFINITIONS = "TARGET_CARBON=1";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"TARGET_CARBON=1",
+					"ACCEL_DETECT=1",
+					"$(ARCH_PREPROCESSOR_DEFINITIONS)",
+				);
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
 				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
@@ -1018,7 +1031,7 @@
 				PRESERVE_DEAD_CODE_INITS_AND_TERMS = YES;
 				SDKROOT = macosx;
 				STRIP_INSTALLED_PRODUCT = YES;
-				STRIP_STYLE = debugging;
+				STRIP_STYLE = all;
 				WARNING_CFLAGS = "-Wimplicit";
 			};
 			name = Release;
@@ -1026,6 +1039,8 @@
 		F5BDACB10A20A00100FF4884 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"ARCH_PREPROCESSOR_DEFINITIONS[arch=i386]" = "ARCH_X86=1";
+				"ARCH_PREPROCESSOR_DEFINITIONS[arch=x86_64]" = "ARCH_X86=1";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -1040,6 +1055,9 @@
 					"TARGET_CARBON=1",
 					"CoreAudio_Debug=1",
 					"DEBUG=1",
+					"ACCEL_DETECT=1",
+					"ARCH_X86=1",
+					"$(ARCH_PREPROCESSOR_DEFINITIONS)",
 				);
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
