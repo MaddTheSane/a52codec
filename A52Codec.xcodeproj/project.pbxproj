@@ -322,7 +322,7 @@
 		F5BDACCC0A20A03200FF4884 /* imdct.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = imdct.c; sourceTree = "<group>"; };
 		F5BDACCF0A20A03200FF4884 /* parse.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = parse.c; sourceTree = "<group>"; };
 		F5BDACD00A20A03200FF4884 /* tables.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = tables.h; sourceTree = "<group>"; };
-		F5BDACFA0A20A11D00FF4884 /* ACShepA52Decoder.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = ACShepA52Decoder.cpp; sourceTree = "<group>"; };
+		F5BDACFA0A20A11D00FF4884 /* ACShepA52Decoder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ACShepA52Decoder.cpp; sourceTree = "<group>"; };
 		F5D1FBD90E7826C20092B612 /* ACCompatibility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ACCompatibility.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 

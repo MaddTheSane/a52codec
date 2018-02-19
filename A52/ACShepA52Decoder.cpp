@@ -78,21 +78,21 @@ void ACShepA52Decoder::UpgradeOldPrefs()
 
 ACShepA52Decoder::ACShepA52Decoder(AudioComponentInstance inInstance) : ACShepA52Codec(76800, inInstance) {
 	
-	//¥¥¥	One issue to talk about here is how do we represent the fact that this
-	//¥¥¥	decoder doesn't care about the number of channels or the sample rate?
-	//¥¥¥	For now, I've implemented it by specifying 0 for the values that don't
-	//¥¥¥	matter. The issue is that 0 can also mean that the value is unknown or
-	//¥¥¥	doesn't apply.
-	//¥¥¥
-	//¥¥¥	Below are examples of both usages, in both the available input and output
-	//¥¥¥	formats. Since the number of channels is 0 (because this decoder doesn't
-	//¥¥¥	care), a lot of the dependant values, like bytes per frame, are unknowable.
-	//¥¥¥
-	//¥¥¥	The reason why this is an issue is that code that tries to figure out how
-	//¥¥¥	to hook this decoder up to other converters is going to have to be very
-	//¥¥¥	careful about being strict enough with format matching that it can always
-	//¥¥¥	be correct, but not too strict that it treats the situations thus created
-	//¥¥¥	as bad matches or, worse yet, an error.
+	//â€¢â€¢â€¢	One issue to talk about here is how do we represent the fact that this
+	//â€¢â€¢â€¢	decoder doesn't care about the number of channels or the sample rate?
+	//â€¢â€¢â€¢	For now, I've implemented it by specifying 0 for the values that don't
+	//â€¢â€¢â€¢	matter. The issue is that 0 can also mean that the value is unknown or
+	//â€¢â€¢â€¢	doesn't apply.
+	//â€¢â€¢â€¢
+	//â€¢â€¢â€¢	Below are examples of both usages, in both the available input and output
+	//â€¢â€¢â€¢	formats. Since the number of channels is 0 (because this decoder doesn't
+	//â€¢â€¢â€¢	care), a lot of the dependant values, like bytes per frame, are unknowable.
+	//â€¢â€¢â€¢
+	//â€¢â€¢â€¢	The reason why this is an issue is that code that tries to figure out how
+	//â€¢â€¢â€¢	to hook this decoder up to other converters is going to have to be very
+	//â€¢â€¢â€¢	careful about being strict enough with format matching that it can always
+	//â€¢â€¢â€¢	be correct, but not too strict that it treats the situations thus created
+	//â€¢â€¢â€¢	as bad matches or, worse yet, an error.
 	
 	
 	/*
