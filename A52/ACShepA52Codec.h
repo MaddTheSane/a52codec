@@ -26,7 +26,7 @@ class ACShepA52Codec : public ACSimpleCodec {
 
 //	Construction/Destruction
 public:
-						ACShepA52Codec(UInt32 inInputBufferByteSize, OSType theSubType);
+						ACShepA52Codec(UInt32 inInputBufferByteSize, AudioComponentInstance inInstance);
 	virtual				~ACShepA52Codec();
 
 //	Data Handling

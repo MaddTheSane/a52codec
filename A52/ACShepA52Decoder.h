@@ -29,7 +29,7 @@ class ACShepA52Decoder
 
 //	Construction/Destruction
 public:
-					ACShepA52Decoder(OSType theSubType);
+					ACShepA52Decoder(AudioComponentInstance inInstance);
 	virtual			~ACShepA52Decoder();
 
 	virtual void	Initialize(const AudioStreamBasicDescription* inInputFormat, const AudioStreamBasicDescription* inOutputFormat, const void* inMagicCookie, UInt32 inMagicCookieByteSize);

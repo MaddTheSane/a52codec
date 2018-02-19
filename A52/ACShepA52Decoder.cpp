@@ -12,8 +12,10 @@
 #include "ACShepA52Decoder.h"
 #include "ACCodecDispatch.h"
 #include "CAStreamBasicDescription.h"
-#include "CASampleTools.h"
+#include "ACPlugInDispatch.h"
 #include "CADebugMacros.h"
+#include "ComponentBase.h"
+#include <CoreServices/CoreServices.h>
 
 //=============================================================================
 //	ACShepA52Decoder
@@ -74,7 +76,7 @@ void ACShepA52Decoder::UpgradeOldPrefs()
 	CFPreferencesAppSynchronize(myApp);
 }
 
-ACShepA52Decoder::ACShepA52Decoder(OSType theSubType) : ACShepA52Codec(76800, theSubType) {
+ACShepA52Decoder::ACShepA52Decoder(AudioComponentInstance inInstance) : ACShepA52Codec(76800, inInstance) {
 	
 	//еее	One issue to talk about here is how do we represent the fact that this
 	//еее	decoder doesn't care about the number of channels or the sample rate?
@@ -1295,8 +1297,5 @@ UInt32	ACShepA52Decoder::GetVersion() const {
 	return 0x00017071;
 }
 
-extern "C"
-ComponentResult	ACShepA52DecoderEntry(ComponentParameters* inParameters, ACShepA52Decoder* inThis) {	
-	return	ACCodecDispatch(inParameters, inThis);
-}
+AUDIOCOMPONENT_ENTRY(AudioCodecFactory, ACShepA52Decoder);
 

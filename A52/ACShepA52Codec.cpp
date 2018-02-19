@@ -15,7 +15,7 @@
 //	ACShepA52Codec
 //=============================================================================
 
-ACShepA52Codec::ACShepA52Codec(UInt32 inInputBufferByteSize, OSType theSubType) : ACSimpleCodec(inInputBufferByteSize, theSubType) {
+ACShepA52Codec::ACShepA52Codec(UInt32 inInputBufferByteSize, AudioComponentInstance inInstance) : ACSimpleCodec(inInputBufferByteSize, inInstance) {
 }
 
 ACShepA52Codec::~ACShepA52Codec() {
