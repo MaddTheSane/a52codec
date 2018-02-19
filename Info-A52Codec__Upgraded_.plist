@@ -64,7 +64,7 @@
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleGetInfoString</key>
-	<string>1.8.1, CoreAudio A/52 and AC-3 Codec Component</string>
+	<string>1.8.2, CoreAudio A/52 and AC-3 Codec Component</string>
 	<key>CFBundleIconFile</key>
 	<string></string>
 	<key>CFBundleIdentifier</key>
@@ -76,10 +76,10 @@
 	<key>CFBundlePackageType</key>
 	<string>BNDL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.8.1</string>
+	<string>1.8.2</string>
 	<key>CFBundleSignature</key>
 	<string>SHEP</string>
 	<key>CFBundleVersion</key>
-	<string>1.8.1</string>
+	<string>1.8.2</string>
 </dict>
 </plist>
