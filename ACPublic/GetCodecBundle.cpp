@@ -51,9 +51,9 @@
 #endif
 
 #if TARGET_OS_WIN32
-#define kCodecBundleID		"com.apple.audio.codecs.Components"
+#define kCodecBundleID		"com.shepmater.A52Codec"
 #else
-const CFStringRef kCodecBundleID = CFSTR("com.apple.audio.codecs.Components");
+const CFStringRef kCodecBundleID = CFSTR("com.shepmater.A52Codec"); // must match CFBundleIdentifier in plist file
 #endif
 
 CFBundleRef GetCodecBundle()
