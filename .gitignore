@@ -3,3 +3,4 @@
 /build/
 A52Codec.xcodeproj/project.xcworkspace
 build
+.DS_Store
