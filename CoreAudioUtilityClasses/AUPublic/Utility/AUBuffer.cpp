@@ -107,10 +107,11 @@ void				AUBufferList::Deallocate()
 		mPtrs = NULL;
 	} */
 	if (mMemory) {
-		if (mExternalMemory)
+		if (mExternalMemory) {
 			mExternalMemory = false;
-		else
+		} else {
 			free(mMemory);
+		}
 		mMemory = NULL;
 	}
 	mPtrState = kPtrsInvalid;
@@ -118,8 +119,9 @@ void				AUBufferList::Deallocate()
 
 AudioBufferList &	AUBufferList::PrepareBuffer(const CAStreamBasicDescription &format, UInt32 nFrames)
 {
-	if (nFrames > mAllocatedFrames)
+	if (nFrames > mAllocatedFrames) {
 		COMPONENT_THROW(kAudioUnitErr_TooManyFramesToProcess);
+	}
 
 	UInt32 nStreams;
 	UInt32 channelsPerStream;
@@ -145,8 +147,9 @@ AudioBufferList &	AUBufferList::PrepareBuffer(const CAStreamBasicDescription &fo
 		buf->mDataByteSize = bytesPerBuffer;
 		mem += streamInterval;
 	}
-	if (UInt32(mem - mMemory) > mAllocatedBytes)
+	if (UInt32(mem - mMemory) > mAllocatedBytes) {
 		COMPONENT_THROW(kAudioUnitErr_TooManyFramesToProcess);
+	}
 	mPtrState = kPtrsToMyMemory;
 	return *mPtrs;
 }
@@ -205,12 +208,14 @@ void	AUBufferList::PrintBuffer(const char *label, int subscript, const AudioBuff
 		if (buf->mData != NULL) {
 			UInt32 nSamples = nFrames * buf->mNumberChannels;
 			for (UInt32 j = 0; j < nSamples; ++j) {
-				if (nSamples > 16 && (j % 16) == 0)
+				if (nSamples > 16 && (j % 16) == 0) {
 					printf("\n\t");
-				if (asFloats)
+				}
+				if (asFloats) {
 					printf(" %6.3f", ((float *)buf->mData)[j]);
-				else
+				} else {
 					printf(" %08X", (unsigned)((UInt32 *)buf->mData)[j]);
+				}
 			}
 		}
 		printf("\n");

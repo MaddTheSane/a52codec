@@ -10,7 +10,6 @@
 //=============================================================================
 
 #include "ACShepA52Decoder.h"
-#include "ACCodecDispatch.h"
 #include "CAStreamBasicDescription.h"
 #include "ACPlugInDispatch.h"
 #include "CADebugMacros.h"
@@ -332,12 +331,10 @@ void ACShepA52Decoder::GetPropertyInfo(AudioCodecPropertyID inPropertyID, UInt32
 	
 	switch(inPropertyID)
 	{
-#if 0
 		case kAudioCodecPropertyOutputChannelLayout:
 			outPropertyDataSize = sizeof(AudioChannelLayout);
 			outWritable = false;
 			break;
-#endif
 		case kAudioCodecPropertyInputChannelLayout:
 			outPropertyDataSize = sizeof(AudioChannelLayout);
 			outWritable = true;

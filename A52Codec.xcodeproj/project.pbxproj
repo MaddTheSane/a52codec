@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -221,7 +221,7 @@
 /* Begin PBXFileReference section */
 		0724C23C05B4963A00AC8248 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
 		07DBCC4D04F56F9100CA25C5 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
-		07EF4C2804F19AA700CA25C5 /* AudioCodecComponentGlue.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = AudioCodecComponentGlue.c; sourceTree = SOURCE_ROOT; };
+		07EF4C2804F19AA700CA25C5 /* AudioCodecComponentGlue.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = AudioCodecComponentGlue.c; sourceTree = SOURCE_ROOT; };
 		0A9B063104D728440070DEF0 /* GetCodecBundle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GetCodecBundle.cpp; sourceTree = "<group>"; };
 		0A9B063204D728440070DEF0 /* GetCodecBundle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GetCodecBundle.h; sourceTree = "<group>"; };
 		552412ED203A63DE00C450F5 /* CABundleLocker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CABundleLocker.cpp; sourceTree = "<group>"; };
@@ -261,10 +261,10 @@
 		557A9B5B18C3F1760058161A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/A52CodecPreferences.xib; sourceTree = "<group>"; };
 		55B82712198EE6EB00E3D14A /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		55C0663F173C554500D8CF2C /* Info-AC3MovieImport.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-AC3MovieImport.plist"; sourceTree = SOURCE_ROOT; };
-		6535B19006694BFC00059066 /* ACShepA52Codec.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = ACShepA52Codec.cpp; sourceTree = "<group>"; };
-		6535B19106694BFC00059066 /* ACShepA52Codec.exp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.exports; path = ACShepA52Codec.exp; sourceTree = "<group>"; };
-		6535B19206694BFC00059066 /* ACShepA52Codec.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ACShepA52Codec.h; sourceTree = "<group>"; };
-		6535B19406694BFC00059066 /* ACShepA52Decoder.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ACShepA52Decoder.h; sourceTree = "<group>"; };
+		6535B19006694BFC00059066 /* ACShepA52Codec.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ACShepA52Codec.cpp; sourceTree = "<group>"; };
+		6535B19106694BFC00059066 /* ACShepA52Codec.exp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.exports; path = ACShepA52Codec.exp; sourceTree = "<group>"; };
+		6535B19206694BFC00059066 /* ACShepA52Codec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACShepA52Codec.h; sourceTree = "<group>"; };
+		6535B19406694BFC00059066 /* ACShepA52Decoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACShepA52Decoder.h; sourceTree = "<group>"; };
 		6535B19606694BFC00059066 /* ACShepA52DecoderPublic.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; path = ACShepA52DecoderPublic.r; sourceTree = "<group>"; };
 		6549E1B7084D104B00118297 /* CAException.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CAException.h; sourceTree = "<group>"; };
 		6549E1B8084D104B00118297 /* CAMutex.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = CAMutex.cpp; sourceTree = "<group>"; };
@@ -375,19 +375,19 @@
 		552412F4203A655A00C450F5 /* AUBase */ = {
 			isa = PBXGroup;
 			children = (
-				552412F5203A655A00C450F5 /* ComponentBase.cpp */,
-				552412F6203A655A00C450F5 /* AUScopeElement.cpp */,
-				552412F7203A655A00C450F5 /* ComponentBase.h */,
 				552412F8203A655A00C450F5 /* AUBase.cpp */,
-				552412F9203A655A00C450F5 /* AUInputElement.h */,
 				552412FA203A655A00C450F5 /* AUBase.h */,
-				552412FB203A655A00C450F5 /* AUPlugInDispatch.h */,
-				552412FD203A655A00C450F5 /* AUOutputElement.cpp */,
-				552412FE203A655A00C450F5 /* AUResources.r */,
-				552412FF203A655A00C450F5 /* AUPlugInDispatch.cpp */,
-				55241300203A655A00C450F5 /* AUOutputElement.h */,
-				55241302203A655A00C450F5 /* AUScopeElement.h */,
 				55241303203A655A00C450F5 /* AUInputElement.cpp */,
+				552412F9203A655A00C450F5 /* AUInputElement.h */,
+				552412FD203A655A00C450F5 /* AUOutputElement.cpp */,
+				55241300203A655A00C450F5 /* AUOutputElement.h */,
+				552412FF203A655A00C450F5 /* AUPlugInDispatch.cpp */,
+				552412FB203A655A00C450F5 /* AUPlugInDispatch.h */,
+				552412FE203A655A00C450F5 /* AUResources.r */,
+				552412F6203A655A00C450F5 /* AUScopeElement.cpp */,
+				55241302203A655A00C450F5 /* AUScopeElement.h */,
+				552412F5203A655A00C450F5 /* ComponentBase.cpp */,
+				552412F7203A655A00C450F5 /* ComponentBase.h */,
 			);
 			path = AUBase;
 			sourceTree = "<group>";
@@ -404,14 +404,14 @@
 		55241336203A835C00C450F5 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
-				55241337203A835C00C450F5 /* AUTimestampGenerator.h */,
 				55241338203A835C00C450F5 /* AUBaseHelper.cpp */,
-				55241339203A835C00C450F5 /* AUSilentTimeout.h */,
-				5524133A203A835C00C450F5 /* AUInputFormatConverter.h */,
-				5524133B203A835C00C450F5 /* AUTimestampGenerator.cpp */,
+				5524133F203A835C00C450F5 /* AUBaseHelper.h */,
 				5524133C203A835C00C450F5 /* AUBuffer.cpp */,
 				5524133E203A835C00C450F5 /* AUBuffer.h */,
-				5524133F203A835C00C450F5 /* AUBaseHelper.h */,
+				5524133A203A835C00C450F5 /* AUInputFormatConverter.h */,
+				55241339203A835C00C450F5 /* AUSilentTimeout.h */,
+				5524133B203A835C00C450F5 /* AUTimestampGenerator.cpp */,
+				55241337203A835C00C450F5 /* AUTimestampGenerator.h */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -419,12 +419,12 @@
 		651243230832A21E0014F742 /* Base Classes */ = {
 			isa = PBXGroup;
 			children = (
-				F51A93030287A1A201000102 /* ACCodec.h */,
-				F51A93020287A1A201000102 /* ACCodec.cpp */,
-				F51A93010287A1A201000102 /* ACBaseCodec.h */,
 				F51A93000287A1A201000102 /* ACBaseCodec.cpp */,
-				F51A93090287A1A201000102 /* ACSimpleCodec.h */,
+				F51A93010287A1A201000102 /* ACBaseCodec.h */,
+				F51A93020287A1A201000102 /* ACCodec.cpp */,
+				F51A93030287A1A201000102 /* ACCodec.h */,
 				F51A93080287A1A201000102 /* ACSimpleCodec.cpp */,
+				F51A93090287A1A201000102 /* ACSimpleCodec.h */,
 			);
 			name = "Base Classes";
 			sourceTree = "<group>";
@@ -447,27 +447,27 @@
 		658FF1C406694E5E003F9757 /* PublicUtility */ = {
 			isa = PBXGroup;
 			children = (
-				55241361203A859300C450F5 /* CAVectorUnitTypes.h */,
-				5524135B203A858200C450F5 /* CAVectorUnit.cpp */,
-				5524135C203A858200C450F5 /* CAVectorUnit.h */,
 				55241358203A856900C450F5 /* CAAtomicStack.h */,
-				55241355203A84CF00C450F5 /* CAThreadSafeList.h */,
 				55241352203A849400C450F5 /* CAAutoDisposer.h */,
-				55241325203A65B600C450F5 /* CAXException.cpp */,
-				55241326203A65B600C450F5 /* CAXException.h */,
-				55241322203A659900C450F5 /* CAMath.h */,
 				552412ED203A63DE00C450F5 /* CABundleLocker.cpp */,
 				552412EE203A63DF00C450F5 /* CABundleLocker.h */,
+				658FF1D806694EAD003F9757 /* CADebugMacros.h */,
+				658FF1DD06694ED6003F9757 /* CADebugPrintf.h */,
+				6549E1B7084D104B00118297 /* CAException.h */,
 				6549E1CD084D108700118297 /* CAHostTimeBase.cpp */,
 				6549E1CE084D108700118297 /* CAHostTimeBase.h */,
-				6549E1B7084D104B00118297 /* CAException.h */,
+				658FF1F206694F67003F9757 /* CALogMacros.h */,
+				55241322203A659900C450F5 /* CAMath.h */,
 				6549E1B8084D104B00118297 /* CAMutex.cpp */,
 				6549E1B9084D104B00118297 /* CAMutex.h */,
-				658FF1F206694F67003F9757 /* CALogMacros.h */,
-				658FF1CF06694E95003F9757 /* CAStreamBasicDescription.h */,
 				658FF1ED06694F4F003F9757 /* CAStreamBasicDescription.cpp */,
-				658FF1DD06694ED6003F9757 /* CADebugPrintf.h */,
-				658FF1D806694EAD003F9757 /* CADebugMacros.h */,
+				658FF1CF06694E95003F9757 /* CAStreamBasicDescription.h */,
+				55241355203A84CF00C450F5 /* CAThreadSafeList.h */,
+				5524135B203A858200C450F5 /* CAVectorUnit.cpp */,
+				5524135C203A858200C450F5 /* CAVectorUnit.h */,
+				55241361203A859300C450F5 /* CAVectorUnitTypes.h */,
+				55241325203A65B600C450F5 /* CAXException.cpp */,
+				55241326203A65B600C450F5 /* CAXException.h */,
 			);
 			path = PublicUtility;
 			sourceTree = SOURCE_ROOT;
@@ -488,15 +488,15 @@
 			isa = PBXGroup;
 			children = (
 				651243230832A21E0014F742 /* Base Classes */,
-				55241365203A86E700C450F5 /* ACPlugInDispatch.cpp */,
-				55241364203A86E700C450F5 /* ACPlugInDispatch.h */,
-				F5D1FBD90E7826C20092B612 /* ACCompatibility.h */,
-				0A9B063204D728440070DEF0 /* GetCodecBundle.h */,
-				0A9B063104D728440070DEF0 /* GetCodecBundle.cpp */,
 				F51A93040287A1A201000102 /* ACCodecDispatch.h */,
 				F51A93050287A1A201000102 /* ACCodecDispatchTypes.h */,
+				F5D1FBD90E7826C20092B612 /* ACCompatibility.h */,
 				F51A93060287A1A201000102 /* ACComponentResources.r */,
 				F51A93070287A1A201000102 /* ACConditionalMacros.h */,
+				55241365203A86E700C450F5 /* ACPlugInDispatch.cpp */,
+				55241364203A86E700C450F5 /* ACPlugInDispatch.h */,
+				0A9B063104D728440070DEF0 /* GetCodecBundle.cpp */,
+				0A9B063204D728440070DEF0 /* GetCodecBundle.h */,
 			);
 			path = ACPublic;
 			sourceTree = SOURCE_ROOT;
@@ -752,10 +752,11 @@
 		F5A548DE02879EB701000102 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0920;
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1520;
 			};
 			buildConfigurationList = F5BDACAF0A20A00100FF4884 /* Build configuration list for PBXProject "A52Codec" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 1;
 			knownRegions = (
@@ -929,8 +930,14 @@
 		F50B7AB90AAB69C800065C78 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CURRENT_PROJECT_VERSION = 1.7.6;
+				DEAD_CODE_STRIPPING = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "A52Preferences/Preferences-Info.plist";
+				INFOPLIST_KEY_NSMainNibFile = A52CodecPreferences;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				INSTALL_PATH = "$(HOME)/Applications";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cod3r.a52codec;
 				PRODUCT_NAME = A52Preferences;
@@ -941,10 +948,16 @@
 		F50B7ABA0AAB69C800065C78 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CURRENT_PROJECT_VERSION = 1.7.6;
+				DEAD_CODE_STRIPPING = YES;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "A52Preferences/Preferences-Info.plist";
+				INFOPLIST_KEY_NSMainNibFile = A52CodecPreferences;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				INSTALL_PATH = "$(HOME)/Applications";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cod3r.a52codec;
 				PRODUCT_NAME = A52Preferences;
@@ -955,20 +968,24 @@
 		F529AD4A0BD7C40800F7A8D0 /* Release+Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CURRENT_PROJECT_VERSION = 1.8.2;
+				DEAD_CODE_STRIPPING = YES;
 				EXPORTED_SYMBOLS_FILE = A52/ACShepA52Codec.exp;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_PREPROCESSOR_DEFINITIONS = (
-					"ARCH_X86=1",
 					"ACCEL_DETECT=1",
 					"TARGET_OS_MAC=1",
 					"$(inherited)",
 				);
+				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_PKGINFO_FILE = YES;
 				HEADER_SEARCH_PATHS = (
 					liba52/include,
 					.,
 				);
 				INFOPLIST_FILE = "Info-A52Codec__Upgraded_.plist";
+				MARKETING_VERSION = 1.8.2;
 				OTHER_CFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shepmater.A52Codec;
 				PRODUCT_NAME = A52Codec;
@@ -981,6 +998,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DEAD_CODE_STRIPPING = YES;
 				EXPORTED_SYMBOLS_FILE = AC3MovieImport/AC3MovieImport.exp;
 				FRAMEWORK_SEARCH_PATHS = ../OldQTFrameworks;
 				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
@@ -990,6 +1008,11 @@
 				);
 				INFOPLIST_FILE = "Info-AC3MovieImport.plist";
 				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = (
+					"-read_only_relocs",
+					suppress,
+				);
+				"OTHER_LDFLAGS[arch=x86_64]" = "";
 				OTHER_REZFLAGS = "-F ../OldQTFrameworks $(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cod3r.ac3movieimport;
 				PRODUCT_NAME = AC3MovieImport;
@@ -1000,9 +1023,15 @@
 		F529AD4C0BD7C40800F7A8D0 /* Release+Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 1.7.6;
+				DEAD_CODE_STRIPPING = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "A52Preferences/Preferences-Info.plist";
+				INFOPLIST_KEY_NSMainNibFile = A52CodecPreferences;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				INSTALL_PATH = "$(HOME)/Applications";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cod3r.a52codec;
 				PRODUCT_NAME = A52Preferences;
@@ -1013,8 +1042,10 @@
 		F529AD4D0BD7C40800F7A8D0 /* Release+Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
+				DEAD_CODE_STRIPPING = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				PRODUCT_NAME = "Build Both";
 			};
@@ -1023,8 +1054,10 @@
 		F529AD4E0BD7C40800F7A8D0 /* Release+Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
+				DEAD_CODE_STRIPPING = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				PRODUCT_NAME = Debug;
 			};
@@ -1033,6 +1066,8 @@
 		F529AD4F0BD7C40800F7A8D0 /* Release+Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"ARCH_PREPROCESSOR_DEFINITIONS[arch=arm64]" = "CA_ARM_NEON=1";
+				"ARCH_PREPROCESSOR_DEFINITIONS[arch=arm64e]" = "CA_ARM_NEON=1";
 				"ARCH_PREPROCESSOR_DEFINITIONS[arch=i386]" = "ARCH_X86=1";
 				"ARCH_PREPROCESSOR_DEFINITIONS[arch=x86_64]" = "ARCH_X86=1";
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
@@ -1043,12 +1078,15 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1060,6 +1098,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 3;
@@ -1080,18 +1119,15 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VALUE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "-DIS_COMPILER_WORKING=0";
-				OTHER_LDFLAGS = (
-					"-read_only_relocs",
-					suppress,
+				OTHER_REZFLAGS = "-d ppc_$ppc -d i386_$i386 -d ppc64_$ppc64 -d x86_64_$x86_64 -d arm64_$arm64 -i /";
+				REZ_SEARCH_PATHS = (
+					"${SDK_DIR}/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/CarbonSound.framework/Versions/A/Headers",
+					"${SDK_DIR}/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers",
 				);
-				"OTHER_LDFLAGS[arch=x86_64]" = "";
-				OTHER_REZFLAGS = "-d ppc_$ppc -d i386_$i386 -d x86_64_$x86_64 -i / -i ${SDK_DIR}/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/CarbonSound.framework/Versions/A/Headers -I ${SDK_DIR}/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers";
-				PRESERVE_DEAD_CODE_INITS_AND_TERMS = YES;
 				SDKROOT = macosx;
-				STRIP_INSTALLED_PRODUCT = NO;
-				STRIP_STYLE = "non-global";
 				WARNING_CFLAGS = "-Wimplicit";
 			};
 			name = "Release+Debug";
@@ -1100,6 +1136,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DEAD_CODE_STRIPPING = YES;
 				EXPORTED_SYMBOLS_FILE = AC3MovieImport/AC3MovieImport.exp;
 				FRAMEWORK_SEARCH_PATHS = ../OldQTFrameworks;
 				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
@@ -1109,6 +1146,11 @@
 				);
 				INFOPLIST_FILE = "Info-AC3MovieImport.plist";
 				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = (
+					"-read_only_relocs",
+					suppress,
+				);
+				"OTHER_LDFLAGS[arch=x86_64]" = "";
 				OTHER_REZFLAGS = "-F ../OldQTFrameworks $(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cod3r.ac3movieimport;
 				PRODUCT_NAME = AC3MovieImport;
@@ -1120,6 +1162,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DEAD_CODE_STRIPPING = YES;
 				EXPORTED_SYMBOLS_FILE = AC3MovieImport/AC3MovieImport.exp;
 				FRAMEWORK_SEARCH_PATHS = ../OldQTFrameworks;
 				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
@@ -1130,6 +1173,11 @@
 				INFOPLIST_FILE = "Info-AC3MovieImport.plist";
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = (
+					"-read_only_relocs",
+					suppress,
+				);
+				"OTHER_LDFLAGS[arch=x86_64]" = "";
 				OTHER_REZFLAGS = "-F ../OldQTFrameworks $(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cod3r.ac3movieimport;
 				PRODUCT_NAME = AC3MovieImport;
@@ -1140,8 +1188,10 @@
 		F583B20F0A759C31005F8A5A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
+				DEAD_CODE_STRIPPING = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				PRODUCT_NAME = Debug;
 			};
@@ -1150,8 +1200,10 @@
 		F583B2100A759C31005F8A5A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -1162,20 +1214,24 @@
 		F5BDACA80A20A00000FF4884 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CURRENT_PROJECT_VERSION = 1.8.2;
+				DEAD_CODE_STRIPPING = YES;
 				EXPORTED_SYMBOLS_FILE = A52/ACShepA52Codec.exp;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_PREPROCESSOR_DEFINITIONS = (
-					"ARCH_X86=1",
 					"ACCEL_DETECT=1",
 					"TARGET_OS_MAC=1",
 					"$(inherited)",
 				);
+				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_PKGINFO_FILE = YES;
 				HEADER_SEARCH_PATHS = (
 					liba52/include,
 					.,
 				);
 				INFOPLIST_FILE = "Info-A52Codec__Upgraded_.plist";
+				MARKETING_VERSION = 1.8.2;
 				OTHER_CFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shepmater.A52Codec;
 				PRODUCT_NAME = A52Codec;
@@ -1187,18 +1243,23 @@
 		F5BDACA90A20A00000FF4884 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CURRENT_PROJECT_VERSION = 1.8.2;
+				DEAD_CODE_STRIPPING = YES;
 				EXPORTED_SYMBOLS_FILE = A52/ACShepA52Codec.exp;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"TARGET_OS_MAC=1",
 					"$(inherited)",
 				);
+				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_PKGINFO_FILE = YES;
 				HEADER_SEARCH_PATHS = (
 					liba52/include,
 					.,
 				);
 				INFOPLIST_FILE = "Info-A52Codec__Upgraded_.plist";
+				MARKETING_VERSION = 1.8.2;
 				OTHER_CFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shepmater.A52Codec;
 				PRODUCT_NAME = A52Codec;
@@ -1210,6 +1271,8 @@
 		F5BDACB00A20A00100FF4884 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"ARCH_PREPROCESSOR_DEFINITIONS[arch=arm64]" = "CA_ARM_NEON=1";
+				"ARCH_PREPROCESSOR_DEFINITIONS[arch=arm64e]" = "CA_ARM_NEON=1";
 				"ARCH_PREPROCESSOR_DEFINITIONS[arch=i386]" = "ARCH_X86=1";
 				"ARCH_PREPROCESSOR_DEFINITIONS[arch=x86_64]" = "ARCH_X86=1";
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
@@ -1220,12 +1283,15 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1236,6 +1302,7 @@
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 3;
@@ -1256,18 +1323,14 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VALUE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				OTHER_CFLAGS = "-DIS_COMPILER_WORKING=0";
-				OTHER_LDFLAGS = (
-					"-read_only_relocs",
-					suppress,
+				OTHER_REZFLAGS = "-d ppc_$ppc -d i386_$i386 -d ppc64_$ppc64 -d x86_64_$x86_64 -d arm64_$arm64 -i /";
+				REZ_SEARCH_PATHS = (
+					"${SDK_DIR}/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/CarbonSound.framework/Versions/A/Headers",
+					"${SDK_DIR}/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers",
 				);
-				"OTHER_LDFLAGS[arch=x86_64]" = "";
-				OTHER_REZFLAGS = "-d ppc_$ppc -d i386_$i386 -d x86_64_$x86_64 -i / -i ${SDK_DIR}/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/CarbonSound.framework/Versions/A/Headers -I ${SDK_DIR}/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers";
-				PRESERVE_DEAD_CODE_INITS_AND_TERMS = YES;
 				SDKROOT = macosx;
-				STRIP_INSTALLED_PRODUCT = YES;
-				STRIP_STYLE = all;
 				WARNING_CFLAGS = "-Wimplicit";
 			};
 			name = Release;
@@ -1275,6 +1338,8 @@
 		F5BDACB10A20A00100FF4884 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"ARCH_PREPROCESSOR_DEFINITIONS[arch=arm64]" = "CA_ARM_NEON=1";
+				"ARCH_PREPROCESSOR_DEFINITIONS[arch=arm64e]" = "CA_ARM_NEON=1";
 				"ARCH_PREPROCESSOR_DEFINITIONS[arch=i386]" = "ARCH_X86=1";
 				"ARCH_PREPROCESSOR_DEFINITIONS[arch=x86_64]" = "ARCH_X86=1";
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
@@ -1285,12 +1350,15 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1298,10 +1366,11 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
-				DEAD_CODE_STRIPPING = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1311,7 +1380,6 @@
 					"CoreAudio_Debug=1",
 					"DEBUG=1",
 					"ACCEL_DETECT=1",
-					"ARCH_X86=1",
 					"$(ARCH_PREPROCESSOR_DEFINITIONS)",
 					AUDIOCODECS_SUPPORT_PLUGINS,
 				);
@@ -1324,19 +1392,15 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VALUE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "-DIS_COMPILER_WORKING=0";
-				OTHER_LDFLAGS = (
-					"-read_only_relocs",
-					suppress,
+				OTHER_REZFLAGS = "-d ppc_$ppc -d i386_$i386 -d ppc64_$ppc64 -d x86_64_$x86_64 -d arm64_$arm64 -i /";
+				REZ_SEARCH_PATHS = (
+					"${SDK_DIR}/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/CarbonSound.framework/Versions/A/Headers",
+					"${SDK_DIR}/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers",
 				);
-				"OTHER_LDFLAGS[arch=x86_64]" = "";
-				OTHER_REZFLAGS = "-d ppc_$ppc -d i386_$i386 -d x86_64_$x86_64 -i / -i ${SDK_DIR}/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/CarbonSound.framework/Versions/A/Headers -I ${SDK_DIR}/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers";
-				PRESERVE_DEAD_CODE_INITS_AND_TERMS = YES;
 				SDKROOT = macosx;
-				STRIP_INSTALLED_PRODUCT = NO;
-				STRIP_STYLE = "non-global";
 				WARNING_CFLAGS = "-Wimplicit";
 			};
 			name = Debug;
@@ -1344,8 +1408,10 @@
 		F5DA8EEC0A54C713004A41D0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
+				DEAD_CODE_STRIPPING = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				PRODUCT_NAME = "Build Both";
 			};
@@ -1354,8 +1420,10 @@
 		F5DA8EED0A54C713004A41D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;

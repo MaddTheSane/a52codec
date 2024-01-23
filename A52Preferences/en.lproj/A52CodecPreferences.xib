@@ -1,8 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="22505" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6254"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="22505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication"/>
@@ -13,13 +14,13 @@
             <windowStyleMask key="styleMask" titled="YES" miniaturizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" topStrut="YES"/>
             <rect key="contentRect" x="527" y="719" width="406" height="133"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1057"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="875"/>
             <view key="contentView" id="339">
-                <rect key="frame" x="0.0" y="0.0" width="406" height="133"/>
+                <rect key="frame" x="0.0" y="0.0" width="406" height="118"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="340">
-                        <rect key="frame" x="309" y="13" width="83" height="32"/>
+                        <rect key="frame" x="317" y="13" width="76" height="32"/>
                         <buttonCell key="cell" type="push" title="Save" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="341">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -32,7 +33,7 @@ DQ
                         </connections>
                     </button>
                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="342">
-                        <rect key="frame" x="226" y="13" width="83" height="32"/>
+                        <rect key="frame" x="243" y="13" width="76" height="32"/>
                         <buttonCell key="cell" type="push" title="Cancel" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="343">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -44,8 +45,8 @@ Gw
                             <action selector="cancel:" target="372" id="402"/>
                         </connections>
                     </button>
-                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="344">
-                        <rect key="frame" x="18" y="95" width="51" height="17"/>
+                    <textField focusRingType="none" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="344">
+                        <rect key="frame" x="18" y="81" width="50" height="16"/>
                         <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="Output:" id="345">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -53,7 +54,7 @@ Gw
                         </textFieldCell>
                     </textField>
                     <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="346">
-                        <rect key="frame" x="229" y="89" width="160" height="26"/>
+                        <rect key="frame" x="227" y="74" width="163" height="25"/>
                         <popUpButtonCell key="cell" type="push" title="Stereo" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" inset="2" arrowPosition="arrowAtCenter" preferredEdge="maxY" selectedItem="351" id="347">
                             <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="menu"/>
@@ -70,8 +71,8 @@ Gw
                             <action selector="set2ChannelModePopup:" target="372" id="407"/>
                         </connections>
                     </popUpButton>
-                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="353">
-                        <rect key="frame" x="18" y="64" width="207" height="17"/>
+                    <textField focusRingType="none" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="353">
+                        <rect key="frame" x="18" y="51" width="206" height="16"/>
                         <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="Make Soft Sounds Play:" id="354">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -79,7 +80,7 @@ Gw
                         </textFieldCell>
                     </textField>
                     <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="355">
-                        <rect key="frame" x="229" y="58" width="160" height="26"/>
+                        <rect key="frame" x="227" y="44" width="163" height="25"/>
                         <popUpButtonCell key="cell" type="push" title="Normally" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" inset="2" arrowPosition="arrowAtCenter" preferredEdge="maxY" selectedItem="359" id="356">
                             <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="menu"/>
@@ -100,11 +101,12 @@ Gw
                     <constraint firstItem="355" firstAttribute="top" secondItem="346" secondAttribute="bottom" constant="10" symbolic="YES" id="2DY-7T-21a"/>
                     <constraint firstAttribute="bottom" secondItem="340" secondAttribute="bottom" constant="20" symbolic="YES" id="7ad-5C-yKY"/>
                     <constraint firstItem="346" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="344" secondAttribute="trailing" constant="8" symbolic="YES" id="9g3-Y0-YUH"/>
+                    <constraint firstItem="342" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="339" secondAttribute="leading" constant="20" symbolic="YES" id="A2Q-ce-hlk"/>
                     <constraint firstItem="344" firstAttribute="baseline" secondItem="346" secondAttribute="baseline" id="Cd8-1R-GG4"/>
                     <constraint firstItem="355" firstAttribute="leading" secondItem="353" secondAttribute="trailing" constant="8" symbolic="YES" id="KXl-TE-hhi"/>
                     <constraint firstItem="346" firstAttribute="top" secondItem="339" secondAttribute="top" constant="20" symbolic="YES" id="N5R-NJ-QiJ"/>
                     <constraint firstItem="340" firstAttribute="baseline" secondItem="342" secondAttribute="baseline" id="Ndp-LD-xFX"/>
-                    <constraint firstItem="342" firstAttribute="top" secondItem="355" secondAttribute="bottom" constant="20" symbolic="YES" id="Sh4-zH-J9d"/>
+                    <constraint firstItem="342" firstAttribute="top" secondItem="355" secondAttribute="bottom" constant="8" symbolic="YES" id="Sh4-zH-J9d"/>
                     <constraint firstItem="346" firstAttribute="leading" secondItem="355" secondAttribute="leading" id="YSe-Iq-g8m"/>
                     <constraint firstItem="340" firstAttribute="width" secondItem="342" secondAttribute="width" id="eY3-wX-MvA"/>
                     <constraint firstItem="346" firstAttribute="trailing" secondItem="355" secondAttribute="trailing" id="eaz-Xk-FEY"/>
@@ -119,6 +121,7 @@ Gw
             <connections>
                 <outlet property="delegate" destination="372" id="390"/>
             </connections>
+            <point key="canvasLocation" x="14" y="132"/>
         </window>
         <menu title="A52CodecPreferences" systemMenu="main" id="361">
             <items>
@@ -174,13 +177,13 @@ Gw
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="336" y="409" width="406" height="144"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1057"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="875"/>
             <view key="contentView" id="374">
-                <rect key="frame" x="0.0" y="0.0" width="406" height="144"/>
+                <rect key="frame" x="0.0" y="0.0" width="406" height="138"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="375">
-                        <rect key="frame" x="18" y="104" width="270" height="17"/>
+                    <textField focusRingType="none" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="375">
+                        <rect key="frame" x="18" y="100" width="264" height="16"/>
                         <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="Dynamic Range Compression (default is 1):" id="376">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -188,7 +191,7 @@ Gw
                         </textFieldCell>
                     </textField>
                     <slider verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="377">
-                        <rect key="frame" x="18" y="69" width="370" height="27"/>
+                        <rect key="frame" x="18" y="63" width="370" height="28"/>
                         <sliderCell key="cell" continuous="YES" alignment="left" maxValue="4" doubleValue="1" tickMarkPosition="below" numberOfTickMarks="13" sliderType="linear" id="378">
                             <font key="font" size="12" name="Helvetica"/>
                         </sliderCell>
@@ -196,8 +199,8 @@ Gw
                             <action selector="setAC3DynamicRangeSlider:" target="372" id="403"/>
                         </connections>
                     </slider>
-                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="379">
-                        <rect key="frame" x="334" y="102" width="52" height="22"/>
+                    <textField focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="379">
+                        <rect key="frame" x="334" y="97" width="52" height="21"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="52" id="thr-9M-lqe"/>
                         </constraints>
@@ -210,23 +213,23 @@ Gw
                                 <decimal key="maximum" value="1"/>
                             </numberFormatter>
                             <font key="font" metaFont="system"/>
-                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                         <connections>
                             <action selector="setAC3DynamicRangeValue:" target="372" id="404"/>
                         </connections>
                     </textField>
-                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="382">
-                        <rect key="frame" x="18" y="49" width="96" height="13"/>
+                    <textField focusRingType="none" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="382">
+                        <rect key="frame" x="18" y="48" width="95" height="13"/>
                         <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="More Compression" id="383">
                             <font key="font" metaFont="label"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="384">
-                        <rect key="frame" x="280" y="49" width="108" height="13"/>
+                    <textField focusRingType="none" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="384">
+                        <rect key="frame" x="280" y="48" width="108" height="13"/>
                         <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Reduce Compression " id="385">
                             <font key="font" metaFont="label"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -234,7 +237,7 @@ Gw
                         </textFieldCell>
                     </textField>
                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="386">
-                        <rect key="frame" x="309" y="13" width="83" height="32"/>
+                        <rect key="frame" x="317" y="13" width="76" height="32"/>
                         <buttonCell key="cell" type="push" title="Save" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="387">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -247,7 +250,7 @@ DQ
                         </connections>
                     </button>
                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="388">
-                        <rect key="frame" x="226" y="13" width="83" height="32"/>
+                        <rect key="frame" x="243" y="13" width="76" height="32"/>
                         <buttonCell key="cell" type="push" title="Cancel" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="389">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -267,10 +270,12 @@ Gw
                     <constraint firstItem="388" firstAttribute="width" secondItem="386" secondAttribute="width" id="GfC-w1-Qsd"/>
                     <constraint firstItem="379" firstAttribute="baseline" secondItem="375" secondAttribute="baseline" id="IGJ-dU-J8k"/>
                     <constraint firstItem="377" firstAttribute="leading" secondItem="374" secondAttribute="leading" constant="20" symbolic="YES" id="MIx-gc-66B"/>
+                    <constraint firstItem="384" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="382" secondAttribute="trailing" constant="8" symbolic="YES" id="S7L-YF-hb1"/>
                     <constraint firstItem="388" firstAttribute="baseline" secondItem="386" secondAttribute="baseline" id="Tfl-Ek-roY"/>
                     <constraint firstAttribute="bottom" secondItem="386" secondAttribute="bottom" constant="20" symbolic="YES" id="YNI-n4-JxN"/>
                     <constraint firstAttribute="trailing" secondItem="377" secondAttribute="trailing" constant="20" symbolic="YES" id="ac3-V9-Js0"/>
                     <constraint firstItem="388" firstAttribute="top" secondItem="384" secondAttribute="bottom" constant="8" symbolic="YES" id="bcC-BH-YLJ"/>
+                    <constraint firstItem="388" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="374" secondAttribute="leading" constant="20" symbolic="YES" id="bmG-5S-J1C"/>
                     <constraint firstItem="384" firstAttribute="trailing" secondItem="377" secondAttribute="trailing" id="cm3-Kl-PzL"/>
                     <constraint firstAttribute="trailing" secondItem="379" secondAttribute="trailing" constant="20" symbolic="YES" id="dr7-RC-nvp"/>
                     <constraint firstItem="375" firstAttribute="leading" secondItem="374" secondAttribute="leading" constant="20" symbolic="YES" id="jLJ-fK-3aP"/>
@@ -281,6 +286,7 @@ Gw
                     <constraint firstItem="384" firstAttribute="top" secondItem="377" secondAttribute="bottom" constant="8" symbolic="YES" id="xrD-Hg-oE5"/>
                 </constraints>
             </view>
+            <point key="canvasLocation" x="-44" y="364"/>
         </window>
     </objects>
 </document>

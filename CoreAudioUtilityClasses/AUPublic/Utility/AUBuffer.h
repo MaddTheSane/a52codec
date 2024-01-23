@@ -158,10 +158,9 @@ public:
 	/*! @method GetAllocatedFrames */
 	UInt32				GetAllocatedFrames() const { return mAllocatedFrames; }
 	
-private:
 	/*! @ctor AUBufferList */
-	AUBufferList(AUBufferList &) { }	// prohibit copy constructor
-
+	AUBufferList(AUBufferList &) = delete;	// prohibit copy constructor
+private:
 	/*! @var mPtrState */
 	EPtrState					mPtrState;
 	/*! @var mExternalMemory */

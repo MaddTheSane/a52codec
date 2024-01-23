@@ -98,10 +98,10 @@ sample_t * a52_samples (a52_state_t * state)
 int a52_syncinfo (const uint8_t * buf, int * flags,
 		  int * sample_rate, int * bit_rate)
 {
-    static int rate[] = { 32,  40,  48,  56,  64,  80,  96, 112,
+    static const int rate[] = { 32,  40,  48,  56,  64,  80,  96, 112,
 			 128, 160, 192, 224, 256, 320, 384, 448,
 			 512, 576, 640};
-    static uint8_t lfeon[8] = {0x10, 0x10, 0x04, 0x04, 0x04, 0x01, 0x04, 0x01};
+    static const uint8_t lfeon[8] = {0x10, 0x10, 0x04, 0x04, 0x04, 0x01, 0x04, 0x01};
     int frmsizecod;
     int bitrate;
     int half;

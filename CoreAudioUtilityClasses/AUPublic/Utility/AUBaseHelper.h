@@ -71,5 +71,4 @@ int AccessURLAsset(const CFURLRef inURL, int mode);
 #endif
 
 
-
 #endif // __AUBaseHelper_h__

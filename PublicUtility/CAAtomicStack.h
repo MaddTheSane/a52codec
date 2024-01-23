@@ -57,6 +57,42 @@
 	#include <CoreServices/CoreServices.h>
 #endif
 
+#if __has_include(<atomic>)
+	#include <atomic>
+	#define USING_STDATOMIC 1
+
+namespace CAAtomicStackPrivate {
+#if __LP64__
+
+#if __has_attribute(aligned)
+typedef int64_t __attribute__((__aligned__((sizeof(int64_t))))) OurAtomic_aligned64_t;
+#else
+typedef int64_t OurAtomic_aligned64_t;
+#endif
+
+static __inline __attribute__((__always_inline__)) bool
+OurAtomicCompareAndSwap64Barrier(int64_t __oldValue, int64_t __newValue, volatile OurAtomic_aligned64_t *__theValue)
+{
+	return std::atomic_compare_exchange_strong_explicit((volatile std::atomic<int64_t>*)__theValue, &__oldValue, __newValue,
+														std::memory_order_seq_cst,
+														std::memory_order_relaxed);
+}
+
+#else // 32-bit
+
+static __inline __attribute__((__always_inline__)) bool
+OurAtomicCompareAndSwap32Barrier(int32_t __oldValue, int32_t __newValue,
+		volatile int32_t *__theValue)
+{
+	return std::atomic_compare_exchange_strong_explicit((volatile std::atomic<int32_t>*)__theValue, &__oldValue, __newValue,
+														std::memory_order_seq_cst,
+														std::memory_order_relaxed);
+}
+
+#endif
+}
+#endif
+
 //  linked list LIFO or FIFO (pop_all_reversed) stack, elements are pushed and popped atomically
 //  class T must implement T *& next().
 template <class T>
@@ -160,7 +196,13 @@ public:
 	
 	static bool	compare_and_swap(T *oldvalue, T *newvalue, T **pvalue)
 	{
-#if TARGET_OS_MAC
+#if USING_STDATOMIC
+	#if __LP64__
+			return CAAtomicStackPrivate::OurAtomicCompareAndSwap64Barrier(int64_t(oldvalue), int64_t(newvalue), (int64_t *)pvalue);
+	#else
+			return CAAtomicStackPrivate::OurAtomicCompareAndSwap32Barrier(int32_t(oldvalue), int32_t(newvalue), (int32_t *)pvalue);
+	#endif
+#elif TARGET_OS_MAC
 	#if __LP64__
 			return ::OSAtomicCompareAndSwap64Barrier(int64_t(oldvalue), int64_t(newvalue), (int64_t *)pvalue);
 	#elif MAC_OS_X_VERSION_MAX_ALLOWED >= MAC_OS_X_VERSION_10_4

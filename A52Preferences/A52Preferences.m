@@ -100,7 +100,9 @@
 			
 		case 3:
 			savedDynValue = dynValue;
-			[NSApp beginSheet:window_dynRangeSheet modalForWindow:window_mainWindow modalDelegate:nil didEndSelector:nil contextInfo:NULL];
+			[window_mainWindow beginSheet:window_dynRangeSheet completionHandler:^(NSModalResponse returnCode) {
+				// Do nothing
+			}];
 			break;
 			
 		default:
@@ -168,14 +170,14 @@
 - (IBAction)cancelDynRangeSheet:(id)sender
 {
 	[self setAC3DynamicRange:savedDynValue];
-	[NSApp endSheet:window_dynRangeSheet];
-	[window_dynRangeSheet orderOut:sender];
+	[window_mainWindow endSheet:window_dynRangeSheet];
+//	[window_dynRangeSheet orderOut:sender];
 }
 
 - (IBAction)saveDynRangeSheet:(id)sender;
 {
-	[NSApp endSheet:window_dynRangeSheet];
-	[window_dynRangeSheet orderOut:sender];
+	[window_mainWindow endSheet:window_dynRangeSheet];
+//	[window_dynRangeSheet orderOut:sender];
 }
 
 - (IBAction)cancel:(id)sender
@@ -188,7 +190,7 @@
 	[defaults setFloat:dynValue forKey:DYNAMIC_RANGE_KEY];
 	[defaults setInteger:twoChannelMode forKey:TWO_CHANNEL_KEY];
 	[defaults synchronize];
-	[[NSApplication sharedApplication] terminate:nil];
+	[[NSApplication sharedApplication] terminate:sender];
 }
 
 @end
