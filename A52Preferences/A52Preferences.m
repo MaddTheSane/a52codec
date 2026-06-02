@@ -83,7 +83,6 @@
 - (void)dealloc
 {
 	self.defaults = nil;
-	[super dealloc];
 }
 
 - (IBAction)setAC3DynamicRangePopup:(id)sender

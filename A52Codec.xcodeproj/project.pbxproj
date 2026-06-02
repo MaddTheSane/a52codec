@@ -147,7 +147,7 @@
 		F5BDACA00A20A00000FF4884 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07DBCC4D04F56F9100CA25C5 /* Carbon.framework */; };
 		F5BDACA10A20A00000FF4884 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0724C23C05B4963A00AC8248 /* AudioUnit.framework */; };
 		F5BDACA20A20A00000FF4884 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65CB364E066A1FA900A75A43 /* CoreAudio.framework */; };
-		F5BDACA60A20A00000FF4884 /* ACShepA52DecoderPublic.r in Rez */ = {isa = PBXBuildFile; fileRef = 6535B19606694BFC00059066 /* ACShepA52DecoderPublic.r */; };
+		F5BDACA60A20A00000FF4884 /* ACShepA52DecoderPublic.r in Resources */ = {isa = PBXBuildFile; fileRef = 6535B19606694BFC00059066 /* ACShepA52DecoderPublic.r */; };
 		F5BDACD10A20A03200FF4884 /* a52.h in Headers */ = {isa = PBXBuildFile; fileRef = F5BDACBC0A20A03200FF4884 /* a52.h */; };
 		F5BDACD20A20A03200FF4884 /* attributes.h in Headers */ = {isa = PBXBuildFile; fileRef = F5BDACBD0A20A03200FF4884 /* attributes.h */; };
 		F5BDACD30A20A03200FF4884 /* audio_out.h in Headers */ = {isa = PBXBuildFile; fileRef = F5BDACBE0A20A03200FF4884 /* audio_out.h */; };
@@ -435,8 +435,8 @@
 				F5BDACAC0A20A00000FF4884 /* Info-A52Codec__Upgraded_.plist */,
 				6535B19206694BFC00059066 /* ACShepA52Codec.h */,
 				6535B19006694BFC00059066 /* ACShepA52Codec.cpp */,
-				F5BDACFA0A20A11D00FF4884 /* ACShepA52Decoder.cpp */,
 				6535B19406694BFC00059066 /* ACShepA52Decoder.h */,
+				F5BDACFA0A20A11D00FF4884 /* ACShepA52Decoder.cpp */,
 				6535B19106694BFC00059066 /* ACShepA52Codec.exp */,
 				6535B19606694BFC00059066 /* ACShepA52DecoderPublic.r */,
 				F50815870A2161180092BF70 /* XCAResources.r */,
@@ -569,8 +569,10 @@
 				F5BDACBB0A20A03200FF4884 /* include */,
 				F5BDACC50A20A03200FF4884 /* liba52 */,
 			);
-			name = liba52;
+			path = liba52;
 			sourceTree = "<group>";
+			tabWidth = 8;
+			usesTabs = 1;
 		};
 		F5BDACBB0A20A03200FF4884 /* include */ = {
 			isa = PBXGroup;
@@ -580,8 +582,7 @@
 				F5BDACBE0A20A03200FF4884 /* audio_out.h */,
 				F5BDACC40A20A03200FF4884 /* tendra.h */,
 			);
-			name = include;
-			path = liba52/include;
+			path = include;
 			sourceTree = "<group>";
 		};
 		F5BDACC50A20A03200FF4884 /* liba52 */ = {
@@ -599,8 +600,7 @@
 				F5BDACCF0A20A03200FF4884 /* parse.c */,
 				F5BDACD00A20A03200FF4884 /* tables.h */,
 			);
-			name = liba52;
-			path = liba52/liba52;
+			path = liba52;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -734,7 +734,6 @@
 				F5BDAC940A20A00000FF4884 /* Resources */,
 				F5BDAC950A20A00000FF4884 /* Sources */,
 				F5BDAC9E0A20A00000FF4884 /* Frameworks */,
-				F5BDACA40A20A00000FF4884 /* Rez */,
 			);
 			buildRules = (
 			);
@@ -753,18 +752,17 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
-				LastUpgradeCheck = 1520;
+				LastUpgradeCheck = 2650;
 			};
 			buildConfigurationList = F5BDACAF0A20A00100FF4884 /* Build configuration list for PBXProject "A52Codec" */;
 			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 1;
 			knownRegions = (
-				English,
-				Japanese,
-				French,
-				German,
 				en,
+				fr,
+				ja,
+				de,
 			);
 			mainGroup = F5A548DA02879EB701000102;
 			productRefGroup = F5A548E802879F3901000102 /* Products */;
@@ -800,6 +798,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5BDACA60A20A00000FF4884 /* ACShepA52DecoderPublic.r in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -811,14 +810,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5525E050A3BF7D700F36B86 /* AC3MovieImport.r in Rez */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F5BDACA40A20A00000FF4884 /* Rez */ = {
-			isa = PBXRezBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F5BDACA60A20A00000FF4884 /* ACShepA52DecoderPublic.r in Rez */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -930,6 +921,7 @@
 		F50B7AB90AAB69C800065C78 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CURRENT_PROJECT_VERSION = 1.7.6;
 				DEAD_CODE_STRIPPING = YES;
@@ -948,6 +940,7 @@
 		F50B7ABA0AAB69C800065C78 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CURRENT_PROJECT_VERSION = 1.7.6;
 				DEAD_CODE_STRIPPING = YES;
@@ -1023,6 +1016,7 @@
 		F529AD4C0BD7C40800F7A8D0 /* Release+Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				COPY_PHASE_STRIP = YES;
 				CURRENT_PROJECT_VERSION = 1.7.6;

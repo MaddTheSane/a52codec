@@ -15,12 +15,12 @@
 	NSUserDefaults						*defaults;
 	float								dynValue;
 	float								savedDynValue;
-	int									twoChannelMode;
+	NSInteger							twoChannelMode;
 }
 @property (retain) NSUserDefaults *defaults;
 @property float dynValue;
 @property float savedDynValue;
-@property int twoChannelMode;
+@property NSInteger twoChannelMode;
 
 - (IBAction)setAC3DynamicRangePopup:(id)sender;
 - (IBAction)set2ChannelModePopup:(id)sender;

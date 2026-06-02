@@ -75,6 +75,7 @@ private:
 	UInt32  total_bytes;
 	
 	bool	firstInput;
+	//TODO: use AudioChannelLabels
 	int		fullChannelMap[6];
 	AudioChannelLayoutTag	layoutTag;
 	

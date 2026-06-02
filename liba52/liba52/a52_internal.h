@@ -144,7 +144,7 @@ void a52_cpu_state_init (uint32_t accel);
 
 typedef sample_t quantizer_t;
 #define SAMPLE(x) (x)
-#define LEVEL(x) (x)
+#define LEVEL(x) (level_t)(x)
 #define MUL(a,b) ((a) * (b))
 #define MUL_L(a,b) ((a) * (b))
 #define MUL_C(a,b) ((a) * (b))

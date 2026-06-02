@@ -286,6 +286,7 @@ public:
 	//
 	//	manipulation
 	
+	CA_CANONICAL_DEPRECATED
 	void	SetCanonical(UInt32 nChannels, bool interleaved)
 				// note: leaves sample rate untouched
 	{
@@ -303,6 +304,7 @@ public:
 		}
 	}
 	
+	CA_CANONICAL_DEPRECATED
 	bool	IsCanonical() const
 	{
 		if (mFormatID != kAudioFormatLinearPCM) return false;
@@ -320,6 +322,7 @@ public:
 			&& mBytesPerPacket == reqFrameSize);
 	}
 	
+	CA_CANONICAL_DEPRECATED
 	void	SetAUCanonical(UInt32 nChannels, bool interleaved)
 	{
 		mFormatID = kAudioFormatLinearPCM;
@@ -397,8 +400,8 @@ public:
 
 //	Operations
 	static bool			IsMixable(const AudioStreamBasicDescription& inDescription) { return (inDescription.mFormatID == kAudioFormatLinearPCM) && ((inDescription.mFormatFlags & kIsNonMixableFlag) == 0); }
-	static void			NormalizeLinearPCMFormat(AudioStreamBasicDescription& ioDescription);
-	static void			NormalizeLinearPCMFormat(bool inNativeEndian, AudioStreamBasicDescription& ioDescription);
+	static void			NormalizeLinearPCMFormat(AudioStreamBasicDescription& ioDescription) CA_CANONICAL_DEPRECATED;
+	static void			NormalizeLinearPCMFormat(bool inNativeEndian, AudioStreamBasicDescription& ioDescription) CA_CANONICAL_DEPRECATED;
 	static void			ResetFormat(AudioStreamBasicDescription& ioDescription);
 	static void			FillOutFormat(AudioStreamBasicDescription& ioDescription, const AudioStreamBasicDescription& inTemplateDescription);
 	static void			GetSimpleName(const AudioStreamBasicDescription& inDescription, char* outName, UInt32 inMaxNameLength, bool inAbbreviate, bool inIncludeSampleRate = false);
